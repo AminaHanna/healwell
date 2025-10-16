@@ -606,7 +606,7 @@ const heroData = {
     ],
   };
 
-const page = () => {
+const Page = () => {
   const [services, setServices] = useState([]);
   const [blogs, setBlogs] = useState([]);
   const [loadingServices, setLoadingServices] = useState(true);
@@ -820,4 +820,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
