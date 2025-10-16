@@ -21,48 +21,56 @@ const Header = ({ isTopBar, variant }) => {
   const menu = {
     email: 'info@healwellhc.com',
     location: '123 Healthcare Blvd, Medical City, MC 12345',
-    logoUrl: '/assets/img/logo.svg',
+    logoUrl: '/assets/img/logo.png',
     logoLink: '/',
     navItems: [
       {
         label: 'Home',
         href: '/',
-        subItems: [
-          { label: 'Main Home', href: '/' },
-          { label: 'Home V2', href: '/home-v2' },
-          { label: 'Home V3', href: '/home-v3' },
-        ],
+        // subItems: [
+          // { label: 'Main Home', href: '/' },
+          // { label: 'Home V2', href: '/home-v2' },
+          // { label: 'Home V3', href: '/home-v3' },
+        // ],
       },
       { label: 'About', href: '/about' },
       {
         label: 'Service',
         href: '/service',
-        subItems: [
-          { label: 'Service', href: '/service' },
-          { label: 'Service Details', href: '/service/service-details' },
-        ],
+        // subItems: [
+        //   { label: 'Service', href: '/service' },
+        //   { label: 'Service Details', href: '/service/service-details' },
+        // ],
       },
       {
         label: 'Blog',
         href: '/blog',
-        subItems: [
-          { label: 'Blog List', href: '/blog' },
-          { label: 'Blog Details', href: '/blog/medical-health-blog' },
-        ],
+        // subItems: [
+        //   { label: 'Blog List', href: '/blog' },
+        //   { label: 'Blog Details', href: '/blog/medical-health-blog' },
+        // ],
       },
       {
-        label: 'Pages',
-        href: '/',
-        subItems: [
-          { label: 'Appointments', href: '/appointments' },
-          { label: 'Doctors', href: '/doctors' },
-          { label: 'Doctor Details', href: '/doctors/doctor-details' },
-          { label: 'Timetable', href: '/timetable' },
-          { label: 'Portfolio', href: '/portfolio' },
-          { label: 'Careers', href: '/careers' },
-          { label: 'Contact', href: '/contact' },
-        ],
+        label: 'Careers',
+        href: '/careers',
+        // subItems: [
+        //   { label: 'Blog List', href: '/blog' },
+        //   { label: 'Blog Details', href: '/blog/medical-health-blog' },
+        // ],
       },
+      // {
+      //   label: 'Pages',
+      //   href: '/',
+      //   subItems: [
+          // { label: 'Appointments', href: '/appointments' },
+          // { label: 'Doctors', href: '/doctors' },
+          // { label: 'Doctor Details', href: '/doctors/doctor-details' },
+          // { label: 'Timetable', href: '/timetable' },
+          // { label: 'Portfolio', href: '/portfolio' },
+          // { label: 'Careers', href: '/careers' },
+          // { label: 'Contact', href: '/contact' },
+      //   ],
+      // },
       { label: 'Contact', href: '/contact' },
     ],
     btnUrl: '/contact',

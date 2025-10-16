@@ -12,7 +12,7 @@ import {
 
 const data = {
   backgroundImage: 'assets/img/footer_bg.jpg',
-  logo: '/assets/img/footer_logo.svg',
+  logo: '/assets/img/logo.png',
   contact: [
     {
       icon: 'fa-regular fa-clock',
@@ -81,7 +81,7 @@ const data = {
 const Footer = () => {
   const data = {
     backgroundImage: '/assets/img/footer_bg.jpg',
-    logo: '/assets/img/footer_logo.svg',
+    logo: '/assets/img/logo.png',
     contactText:
       'Open Hours of Government: <br /> Mon - Fri: 8.00 am. - 6.00 pm.',
     contactText2: '123 Healthcare Blvd, Medical City, MC 12345',

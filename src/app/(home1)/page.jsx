@@ -147,7 +147,7 @@ const heroData = {
         backgroundImage: '/assets/img/service_bg.jpg',
         iconUrl: '/assets/img/icons/service_icon_2.png',
         index: '02',
-        title: 'Orthopedic',
+        title: 'PRN Nursing',
         subtitle: 'Medical competitor research startup to financial',
         link: '/service/orthopedic',
       },
@@ -606,7 +606,7 @@ const heroData = {
     ],
   };
 
-const Page = () => {
+const page = () => {
   const [services, setServices] = useState([]);
   const [blogs, setBlogs] = useState([]);
   const [loadingServices, setLoadingServices] = useState(true);
@@ -797,9 +797,9 @@ const Page = () => {
       {/* End CTA Section */}
 
       {/* Start Medical Tab Section */}
-      <Section topSpaceLg="70" topSpaceMd="110">
+      {/* <Section topSpaceLg="70" topSpaceMd="110">
         <MedicalTabSection data={medicalTabsData} />
-      </Section>
+      </Section> */}
       {/* End Medical Tab Section */}
 
       {/* Start Contact Solution */}
@@ -820,4 +820,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default page;

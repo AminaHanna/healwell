@@ -11,16 +11,16 @@ const headingData = {
   };
   
   const aboutData = {
-    sectionSubtitle: 'OUR ABOUT US',
-    sectionTitle: 'More Than 26+ Years About Provide Medical.',
+    sectionSubtitle: 'OUR STORY',
+    sectionTitle: 'Healing Starts with the Right Team',
     aboutText:
-      'We are privileged to work with hundreds of future-thinking medial, including many of the world’s top hardware, software, and brands, feel safe and comfortable in establishing.',
+      'Healwell Healthcare Services was born from a simple yet powerful observation: healthcare facilities needed more than just temporary staff – they needed trusted partners who understood the critical nature of patient care and the complexities of healthcare operations. Founded by healthcare professionals who experienced firsthand the challenges of staffing shortages, we built our company on the foundation of reliability, integrity, and deep respect for the healthcare profession. Today, we are proud to serve hundreds of healthcare facilities across the region, connecting them with thousands of qualified professionals who share our commitment to exceptional patient care.',
     service:
       "There are many variations of pass available this medical service the team <a href='#''>READ MORE +</a>",
-    experienceYears: '26+',
-    experienceTitle: 'Experience',
-    videoUrl: 'https://www.youtube.com/embed/rRid6GCJtgc',
-    videoText: 'How We Work',
+    // experienceYears: '26+',
+    // experienceTitle: 'Experience',
+    // videoUrl: 'https://www.youtube.com/embed/rRid6GCJtgc',
+    // videoText: 'How We Work',
     iconboxes: [
       {
         imgUrl: '/assets/img/icons/about_icon_1.png',

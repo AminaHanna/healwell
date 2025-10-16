@@ -16,8 +16,8 @@ export default function AdminDashboard() {
         <div className="container-fluide">
           <div className="admin-header-content">
             <div className="admin-logo">
-              <h1 className="cs_primary_color">Medilo Admin</h1>
-              <p className="cs_secondary_color">Content Management System</p>
+              <h1 className="cs_primary_color">HealWell Admin</h1>
+              {/* <p className="cs_secondary_color">Content Management System</p> */}
             </div>
             <div className="admin-user">
               <span className="cs_secondary_color">Administrator</span>
