@@ -88,7 +88,7 @@ const headingData = {
   };
 
 
-const page = () => {
+const Page = () => {
   const [services, setServices] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -151,4 +151,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;

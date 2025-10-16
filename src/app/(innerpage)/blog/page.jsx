@@ -9,7 +9,7 @@ const headingData = {
     title: 'Blog Page',
   };
 
-const page = () => {
+const Page = () => {
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -98,4 +98,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;
