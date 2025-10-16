@@ -4,7 +4,7 @@ import CounterSection2 from '@/app/Components/FunSection/CounterSection2';
 import PageHeading from '@/app/Components/PageHeading';
 import Section from '@/app/Components/Section';
 import ServiceSection4 from '@/app/Components/Service/ServiceSection4';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 
 const headingData = {
@@ -53,7 +53,7 @@ const defaultServiceData = {
   readMoreText: "READ MORE +",
 };
 
-export default function ServiceDetailsPage({ params }) {
+function ServiceDetailsContent({ params }) {
   const searchParams = useSearchParams();
   const slug = searchParams.get('slug') || params.slug;
   const [service, setService] = useState(null);
@@ -64,7 +64,7 @@ export default function ServiceDetailsPage({ params }) {
       try {
         const response = await fetch(`/api/services?slug=${slug}`);
         const data = await response.json();
-        
+
         if (data && data.length > 0) {
           const serviceData = data[0];
           setService(serviceData);
@@ -119,5 +119,13 @@ export default function ServiceDetailsPage({ params }) {
         <CounterSection2 data={counterData} />
       </Section>
     </div>
+  );
+}
+
+export default function ServiceDetailsPage({ params }) {
+  return (
+    <Suspense fallback={<div className="text-center py-8">Loading...</div>}>
+      <ServiceDetailsContent params={params} />
+    </Suspense>
   );
 }
