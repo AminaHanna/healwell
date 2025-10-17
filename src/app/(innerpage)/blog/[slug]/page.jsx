@@ -4,6 +4,7 @@ import BlogsLeft from '@/app/Components/BlogsDetailsSide/BlogsLeft';
 import BlogsRight from '@/app/Components/BlogsDetailsSide/BlogsRight';
 import PageHeading from '@/app/Components/PageHeading';
 import Section from '@/app/Components/Section';
+import AppointmentSection from '@/app/Components/AppointmentSection';
 import React, { useEffect, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 
@@ -16,35 +17,42 @@ const defaultLeftSideData = {
   imageAlt: 'Post Image',
   text: 'Medilo',
   secText: 'June,10,2024',
-  thirdSecTitle: 'Make an Appointment',
   content: [
     'Loading blog content...',
   ],
-  testimonial: {
-    rating: 4,
-    subtitle:
-      'We are privileged to work hundreds of ncluding many of the world\'s top hardware, dental, and brands , feel safe and comfortable',
-    avatarSrc: '/assets/img/avatar_1.png',
-    avatarAlt: 'Avatar',
-    avatarName: 'Dr. Mehara Bara',
-    avatarTitle: 'Dental Manager',
-  },
-  card: {
-    title: 'Medical Lab:',
-    subtitle: 'We businesss standard chunk of ness reproduced we bet it',
-    progress: [
-      { label: 'Dental', percentage: 85 },
-      { label: 'Medical', percentage: 65 },
-      { label: 'Solution', percentage: 78 },
-    ],
-  },
-  commentTitle: 'Comments (0)',
-  comments: [],
-  serviceOption: [
-    { value: 'general', label: 'General Consultation' },
-    { value: 'dental', label: 'Dental' },
-    { value: 'medical', label: 'Medical' },
-    { value: 'surgery', label: 'Surgery' },
+};
+
+const appointmentData = {
+  subtitle: 'Book Your Appointment',
+  title: 'Meet Our Medical Professionals',
+  doctorsData: [
+    {
+      name: 'Dr. Sarah Johnson',
+      specialty: 'General Practitioner',
+      imageUrl: '/assets/img/doctor_1.jpg',
+      profileLink: '/doctor/sarah-johnson',
+      iconUrl: 'https://facebook.com',
+      iconUrl2: 'https://pinterest.com',
+      iconUrl3: 'https://twitter.com',
+    },
+    {
+      name: 'Dr. Michael Chen',
+      specialty: 'Dental Specialist',
+      imageUrl: '/assets/img/doctor_2.jpg',
+      profileLink: '/doctor/michael-chen',
+      iconUrl: 'https://facebook.com',
+      iconUrl2: 'https://pinterest.com',
+      iconUrl3: 'https://twitter.com',
+    },
+    {
+      name: 'Dr. Emily Rodriguez',
+      specialty: 'Cardiologist',
+      imageUrl: '/assets/img/doctor_3.jpg',
+      profileLink: '/doctor/emily-rodriguez',
+      iconUrl: 'https://facebook.com',
+      iconUrl2: 'https://pinterest.com',
+      iconUrl3: 'https://twitter.com',
+    },
   ],
 };
 
@@ -118,11 +126,6 @@ export default function BlogDetailsPage({ params }) {
     }),
     content: [blog.content],
     isHtmlContent: true,
-    card: defaultLeftSideData.card,
-    testimonial: defaultLeftSideData.testimonial,
-    comments: defaultLeftSideData.comments,
-    commentTitle: defaultLeftSideData.commentTitle,
-    serviceOption: defaultLeftSideData.serviceOption,
   } : defaultLeftSideData;
 
   return (
@@ -152,6 +155,10 @@ export default function BlogDetailsPage({ params }) {
         ) : (
           <div className="text-center py-8">Blog not found</div>
         )}
+      </Section>
+
+      <Section topSpaceLg="80" topSpaceMd="120" bottomSpaceLg="80" bottomSpaceMd="120">
+        <AppointmentSection data={appointmentData} />
       </Section>
     </div>
   );

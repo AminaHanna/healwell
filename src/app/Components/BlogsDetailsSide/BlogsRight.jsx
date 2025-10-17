@@ -21,7 +21,7 @@ const BlogsRight = ({ data }) => {
           </div>
 
           {/* Service */}
-          {data?.service && (
+          {/* {data?.service && (
             <div
               className="cs_sidebar_widget cs_service cs_bg_filed"
               style={{
@@ -45,7 +45,7 @@ const BlogsRight = ({ data }) => {
                 </Link>
               </div>
             </div>
-          )}
+          )} */}
 
           {/* Recent Posts */}
           {data?.recentPosts && data.recentPosts.length > 0 && (
@@ -77,7 +77,7 @@ const BlogsRight = ({ data }) => {
           )}
 
           {/* Categories */}
-          {data?.categories && data.categories.length > 0 && (
+          {/* {data?.categories && data.categories.length > 0 && (
             <div className="cs_sidebar_widget cs_radius_15">
               <h3 className="cs_sidebar_title">{data.secTitle || 'Categories'}</h3>
               <ul className="cs_categories cs_mp0">
@@ -93,10 +93,10 @@ const BlogsRight = ({ data }) => {
                 ))}
               </ul>
             </div>
-          )}
+          )} */}
 
           {/* Tags */}
-          {data?.tags && data.tags.length > 0 && (
+          {/* {data?.tags && data.tags.length > 0 && (
             <div className="cs_sidebar_widget cs_radius_15">
               <div className="cs_sidebar_tags">
                 <h3 className="cs_sidebar_title">{data.secTitle2 || 'Tags'}</h3>
@@ -109,7 +109,7 @@ const BlogsRight = ({ data }) => {
                 </div>
               </div>
             </div>
-          )}
+          )} */}
         </div>
       </aside>
     </>

@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
+import { supabase } from '@/lib/supabase';
+import { uploadImage } from '@/lib/imageUpload';
 
 // Dynamically import ReactQuill to avoid SSR issues
 const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
@@ -19,10 +21,15 @@ export default function ServiceForm({ service, onSave, onCancel }) {
     active: true,
     display_order: 0,
   });
+  const [imagePreview, setImagePreview] = useState(null);
+  const [uploading, setUploading] = useState(false);
 
   useEffect(() => {
     if (service) {
       setFormData(service);
+      if (service.featured_image) {
+        setImagePreview(service.featured_image);
+      }
     }
   }, [service]);
 
@@ -49,6 +56,37 @@ export default function ServiceForm({ service, onSave, onCancel }) {
       ...prev,
       description
     }));
+  };
+
+  const handleImageUpload = async (e) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    try {
+      setUploading(true);
+
+      // Create a preview
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setImagePreview(reader.result);
+      };
+      reader.readAsDataURL(file);
+
+      // Upload to Supabase Storage using utility function
+      const { publicUrl, error } = await uploadImage(file, 'service-images', 'service');
+
+      if (error) throw error;
+
+      setFormData(prev => ({
+        ...prev,
+        featured_image: publicUrl
+      }));
+    } catch (error) {
+      console.error('Error uploading image:', error);
+      alert('Error uploading image: ' + error.message);
+    } finally {
+      setUploading(false);
+    }
   };
 
   const handleSubmit = (e) => {
@@ -154,14 +192,24 @@ export default function ServiceForm({ service, onSave, onCancel }) {
           </div>
 
           <div className="form-group">
-            <label className="cs_primary_color">Featured Image URL</label>
+            <label className="cs_primary_color">Featured Image</label>
             <input
-              type="url"
-              name="featured_image"
-              value={formData.featured_image}
-              onChange={handleChange}
-              placeholder="https://example.com/image.jpg"
+              type="file"
+              accept="image/*"
+              onChange={handleImageUpload}
+              disabled={uploading}
+              className="cs_form_field"
             />
+            {uploading && <p className="cs_secondary_color">Uploading image...</p>}
+            {imagePreview && (
+              <div className="image-preview" style={{ marginTop: '10px' }}>
+                <img
+                  src={imagePreview}
+                  alt="Preview"
+                  style={{ maxWidth: '200px', maxHeight: '200px', borderRadius: '8px' }}
+                />
+              </div>
+            )}
           </div>
 
           <div className="form-row">
