@@ -33,9 +33,10 @@ const heroData = {
       },
       {
         bgImageUrl: '/assets/img/hero_slider_2.jpg',
-        title: 'Your Center for <br>Mental <span>Health.</span>',
+        // title: 'Your Center for <br>Mental <span>Health.</span>',
+        title: 'Empowering Healthcare, One Professional at a Time',
         contactSubtitle:
-          'Medical ers piciatis unde omnis iste natus this the word medical this mountains, far from the countries Vokalia and, live the docor white teeth sitting on a dental for best medical.',
+          'Connecting trusted healthcare experts with facilities that value quality, compassion, and reliability.',
         // contactTitle: 'Receive Medical Service.',
         // contact: 'Call Us at: (+2) 56 54 1453',
         btnText1: 'Contact Now',
@@ -46,9 +47,9 @@ const heroData = {
       },
       {
         bgImageUrl: '/assets/img/hero_slider_1.jpg',
-        title: 'We Hospital Doctors Patients <span>Service.</span>',
+        title: 'Your Trusted Partner in Healthcare Staffing',
         contactSubtitle:
-          'Medical ers piciatis unde omnis iste natus this the word medical this mountains, far from the countries Vokalia and, live the docor white teeth sitting on a dental for best medical.',
+          'From hospitals to clinics, Healwell delivers qualified professionals who make patient care their top priority.',
         // contactTitle: 'Receive Medical Service.',
         // contact: 'Call Us at: (+2) 56 54 1453',
         btnText1: 'Contact Now',
@@ -133,7 +134,7 @@ const heroData = {
     subtitle: 'OUR BEST SERVICE',
     title: 'High-Quality Services This Doctor',
     description:
-      'We are privileged to work with hundreds of future-thinking medial,<br> including many of the world’s top hardware, software, and<br> brands, feel safe and comfortable in establishing.',
+      'At Healwell Healthcare Services, we provide end-to-end staffing and workforce solutions tailored for hospitals, clinics, and care facilities. From temporary and permanent placements to specialized healthcare professionals.',
     services: [
       {
         backgroundImage: '/assets/img/service_bg.jpg',

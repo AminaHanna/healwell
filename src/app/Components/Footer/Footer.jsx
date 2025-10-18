@@ -94,11 +94,11 @@ const Footer = () => {
       {
         title: 'Service',
         links: [
-          { href: '/service/plastic-surgery', text: 'Plastic Surgery' },
-          { href: '/service/pharmacology', text: 'Pharmacology' },
-          { href: '/service/dental-care', text: 'Dental Care' },
-          { href: '/service/cardiology', text: 'Cardiology' },
-          { href: '/service/orthopedic', text: 'Orthopedic' },
+          { href: '/service/prn-nursing-staff', text: 'PRN Nursing Staff' },
+          { href: '/service/travel-nursing', text: 'Travel Nursing' },
+          { href: '/service/per-diem-professionals', text: 'Per Diem Professionals' },
+          { href: '/service/allied-health-professionals', text: 'Allied Health Professionals' },
+          // { href: '/service/orthopedic', text: 'Orthopedic' },
         ],
       },
       {
@@ -107,7 +107,7 @@ const Footer = () => {
           { href: '/', text: 'Home' },
           { href: '/about', text: 'About Us' },
           { href: '/service', text: 'Our Services' },
-          { href: '/portfolio', text: 'Our Portfolio' },
+          // { href: '/portfolio', text: 'Our Portfolio' },
           { href: '/contact', text: 'Contact' },
         ],
       },
@@ -126,11 +126,11 @@ const Footer = () => {
         title: 'The Medical Of This Working Health',
       },
     ],
-    copyrightText: 'Copyright © 2024 HealWell, All Rights Reserved.',
+    copyrightText: 'Copyright © 2025 HealWell, All Rights Reserved.',
     footerMenu: [
       { href: '/about', text: 'About Us' },
-      { href: '/', text: 'Events' },
-      { href: '/blog', text: 'News' },
+      // { href: '/', text: 'Events' },
+      // { href: '/blog', text: 'News' },
       { href: '/service', text: 'Service' },
     ],
   };
