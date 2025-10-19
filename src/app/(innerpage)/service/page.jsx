@@ -14,72 +14,7 @@ const headingData = {
     title: 'High-Quality Services This Doctor',
     description:
       'We are privileged to work with hundreds of future-thinking medial,<br> including many of the world’s top hardware, software, and<br> brands, feel safe and comfortable in establishing.',
-    services: [
-      {
-        backgroundImage: '/assets/img/service_bg.jpg',
-        iconUrl: '/assets/img/icons/service_icon_1.png',
-        index: '01',
-        title: 'Pharmacology',
-        subtitle: 'Medical competitor research startup to financial',
-        link: '/service/service-details',
-      },
-      {
-        backgroundImage: '/assets/img/service_bg.jpg',
-        iconUrl: '/assets/img/icons/service_icon_2.png',
-        index: '02',
-        title: 'Orthopedic',
-        subtitle: 'Medical competitor research startup to financial',
-        link: '/service/service-details',
-      },
-      {
-        backgroundImage: '/assets/img/service_bg.jpg',
-        iconUrl: '/assets/img/icons/service_icon_3.png',
-        index: '03',
-        title: 'Hematology',
-        subtitle: 'Medical competitor research startup to financial',
-        link: '/service/service-details',
-      },
-      {
-        backgroundImage: '/assets/img/service_bg.jpg',
-        iconUrl: '/assets/img/icons/service_icon_4.png',
-        index: '04',
-        title: 'Plastic Surgery',
-        subtitle: 'Medical competitor research startup to financial',
-        link: '/service/service-details',
-      },
-      {
-        backgroundImage: '/assets/img/service_bg.jpg',
-        iconUrl: '/assets/img/icons/service_icon_5.png',
-        index: '05',
-        title: 'Neurology',
-        subtitle: 'Medical competitor research startup to financial',
-        link: '/service/service-details',
-      },
-      {
-        backgroundImage: '/assets/img/service_bg.jpg',
-        iconUrl: '/assets/img/icons/service_icon_6.png',
-        index: '06',
-        title: 'Ophthalmology',
-        subtitle: 'Medical competitor research startup to financial',
-        link: '/service/service-details',
-      },
-      {
-        backgroundImage: '/assets/img/service_bg.jpg',
-        iconUrl: '/assets/img/icons/service_icon_7.png',
-        index: '07',
-        title: 'Dental Care',
-        subtitle: 'Medical competitor research startup to financial',
-        link: '/service/service-details',
-      },
-      {
-        backgroundImage: '/assets/img/service_bg.jpg',
-        iconUrl: '/assets/img/icons/service_icon_8.png',
-        index: '08',
-        title: 'Cardiology',
-        subtitle: 'Medical competitor research startup to financial',
-        link: '/service/service-details',
-      },
-    ],
+    services: [],
     footerIcon: '/assets/img/icons/service_footer_icon_1.png',
     footerText:
       'Delivering tomorrow’s health care for your family.<br>medical this View',
@@ -142,8 +77,13 @@ const Page = () => {
         >
           {loading ? (
             <div className="text-center py-8">Loading services...</div>
-          ) : (
+          ) : services.length > 0 ? (
             <Service data={dynamicServiceData} />
+          ) : (
+            <div className="text-center py-12">
+              <h3 className="cs_primary_color mb-3">No Services Available</h3>
+              <p className="cs_secondary_color">Check back soon for new services!</p>
+            </div>
           )}
         </Section>
 

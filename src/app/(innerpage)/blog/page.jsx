@@ -51,21 +51,7 @@ const Page = () => {
   const blogsSectionData = {
     sectionSubtitle: 'OUR LARGEST BLOG',
     sectionTitle: 'Latest Posts &amp; Articles',
-    blogsData: blogs.length > 0 ? blogs : [
-      {
-        id: 1,
-        category: 'Technology',
-        date: 'Jun 14',
-        author: 'Admin',
-        comments: '2 Comments',
-        title: 'The Future of AI in Medicine',
-        subtitle:
-          'Explore the possibilities of AI in revolutionizing healthcare.',
-        image: '/assets/img/post_1.jpeg',
-        link: '/blog/blog-details',
-        linkText: 'Read More',
-      },
-    ],
+    blogsData: blogs,
   };
 
     return (
@@ -87,8 +73,13 @@ const Page = () => {
       >
         {loading ? (
           <div className="text-center py-8">Loading blogs...</div>
-        ) : (
+        ) : blogs.length > 0 ? (
           <BlogsSection1 data={blogsSectionData} />
+        ) : (
+          <div className="text-center py-12">
+            <h3 className="cs_primary_color mb-3">No Blog Posts Yet</h3>
+            <p className="cs_secondary_color">Check back soon for new content!</p>
+          </div>
         )}
       </Section>
       {/* End Blog Section */}

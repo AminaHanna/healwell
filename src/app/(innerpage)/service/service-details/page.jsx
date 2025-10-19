@@ -10,42 +10,13 @@ const headingData = {
   
   const serviceData = {
     serviceHeading: "All Service:",
-    services: [
-      { title: "Medical lab service", url: "/" },
-      { title: "Dental best service", url: "/" },
-      { title: "Dedicate doctor best", url: "/" },
-      { title: "Team can help achieve", url: "/" },
-      { title: "Medical goals lab", url: "/" },
-    ],
+    services: [],
     mainImage: "/assets/img/service_details_1.jpg",
-    serviceDetails: [
-      "It is a long established fact that a reader will be distracted restore inexpensive e-markets vis to is a long established fact that a reader will be distracted restore inexpensive e-markets vis to corporate intellectual capital. Holisticly reinvent compelling niche markets via scalable strategic. by the readable content of a page when looking. vis corporate intellectual capital. Holisticly reinvent compelling niche markets via scalabl etrategic.by the meadable content of a page when looking at its layout. The point to this singis that normal distribution of Medical",
-      "We is a long established fact that a reader will be distracted restore inexpensive e-markets vis tontellectual capital. Holisticly reinvent compelling niche markets via scalable strategic. by the readable content of a page when looking. vis corporate intellectual capital. vis corporate intellectual capitalh olisticly reinvent compelling niche markets via scalable strategic. by the readable content of a page when looking.",
-    ],
-    footerText:
-      "We is a long established fact that a reader will be distractedrestore inexpensive e-markets vis tontellectual capital. Holisticly reinvent compelling niche markets via scalable strategic. by the readable content of a page when looking. vis corporate intellectual capital. vis corporate intellectual capitalh olisticly reinvent compelling niche markets via scalable strategic. by the readable content of a page when looking.",
+    serviceDetails: [],
+    footerText: "",
     additionalImages: "/assets/img/service_details_2.jpg",
-    iconBoxes: [
-      {
-        index: "01",
-        title: "Service & Check",
-        subtitle: "Medical competitor research startup to financial",
-        icon: "/assets/img/icons/service_icon_1.png",
-        bgImage: "/assets/img/service_bg.jpg",
-        link: "/",
-      },
-      {
-        index: "02",
-        title: "Medical Care",
-        subtitle: "Medical competitor research startup to financial",
-        icon: "/assets/img/icons/service_icon_2.png",
-        bgImage: "/assets/img/service_bg.jpg",
-        link: "/",
-      },
-    ],
-  
-    subtitle:
-      "There are many variations of pass available this medical service the team",
+    iconBoxes: [],
+    subtitle: "",
     readMoreUrl: "/",
     readMoreText: "READ MORE +",
   };

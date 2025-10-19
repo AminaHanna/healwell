@@ -65,26 +65,11 @@ const rightSideData = {
     subtitle: 'Get in touch with our medical professionals',
     link: '/contact',
   },
-  recentPosts: [
-    {
-      imgSrc: '/assets/img/post_1.jpeg',
-      title: 'Medical Of This Working Health Blog',
-      date: 'May 02',
-      link: '/blog',
-    },
-  ],
+  recentPosts: [],
   secTitle: 'Categories',
-  categories: [
-    { name: 'Medical', link: '/blog' },
-    { name: 'Health', link: '/blog' },
-    { name: 'Technology', link: '/blog' },
-  ],
+  categories: [],
   secTitle2: 'Tags',
-  tags: [
-    { tagTitle: 'Medical', tagUrl: '/blog' },
-    { tagTitle: 'Health', tagUrl: '/blog' },
-    { tagTitle: 'Doctor', tagUrl: '/blog' },
-  ],
+  tags: [],
 };
 
 export default function BlogDetailsPage({ params }) {
@@ -157,9 +142,9 @@ export default function BlogDetailsPage({ params }) {
         )}
       </Section>
 
-      <Section topSpaceLg="80" topSpaceMd="120" bottomSpaceLg="80" bottomSpaceMd="120">
+      {/* <Section topSpaceLg="80" topSpaceMd="120" bottomSpaceLg="80" bottomSpaceMd="120">
         <AppointmentSection data={appointmentData} />
-      </Section>
+      </Section> */}
     </div>
   );
 }

@@ -113,40 +113,7 @@ const HeroData = {
     title: 'High-Quality Services This Doctor',
     description:
       'We are privileged to work with hundreds of future-thinking medial, including many of the world’s top hardware, software, and brands , feel safe and comfortable in establishing.',
-    services: [
-      {
-        iconSrc: '/assets/img/icons/service_icon_15.png',
-        title: 'Pharmacology',
-        subtitle:
-          'Medical competitor research doctor healthy service<br> startup to financial',
-        link: '/service/service-details',
-        imageSrc: '/assets/img/service_1.png',
-      },
-      {
-        iconSrc: '/assets/img/icons/service_icon_16.png',
-        title: 'Orthopedic',
-        subtitle:
-          'Medical competitor research doctor healthy service<br> startup to financial',
-        link: '/service/service-details',
-        imageSrc: '/assets/img/service_1.png',
-      },
-      {
-        iconSrc: '/assets/img/icons/service_icon_17.png',
-        title: 'Hematology',
-        subtitle:
-          'Medical competitor research doctor healthy service<br> startup to financial',
-        link: '/service/service-details',
-        imageSrc: '/assets/img/service_1.png',
-      },
-      {
-        iconSrc: '/assets/img/icons/service_icon_18.png',
-        title: 'Plastic Surgery',
-        subtitle:
-          'Medical competitor research doctor healthy service<br> startup to financial',
-        link: '/service/service-details',
-        imageSrc: '/assets/img/service_1.png',
-      },
-    ],
+    services: [],
   };
   
   const brandData = [
@@ -393,60 +360,7 @@ const HeroData = {
   const blogsData = {
     sectionTitle: 'OUR LARGEST BLOG',
     sectionSubtitle: 'Latest Posts &amp; Articles',
-    postsData: [
-      {
-        title: 'Medical Of This Working Health Blog',
-        subtitle:
-          'Medical standard chunk ofI nibh velit auctor aliquet sollic tudin.',
-        date: 'May 02',
-        category: 'Medical',
-        author: 'Admin',
-        thumbnail: '/assets/img/post_1.jpeg',
-        btnText: 'Read More',
-        postLink: '/blog/medical-health-blog',
-        authorIcon: '/assets/img/icons/post_user_icon.png',
-        commentIcon: '/assets/img/icons/post_comment_icon.png',
-      },
-      {
-        title: 'There Is Only One Thing That Is Hospital.',
-        subtitle:
-          'Medical standard chunk ofI nibh velit auctor aliquet sollic tudin.',
-        date: 'May 02',
-        category: 'Medical',
-        author: 'Admin',
-        thumbnail: '/assets/img/post_2.jpeg',
-        btnText: 'Read More',
-        postLink: '/blog/hospital-thing',
-        authorIcon: '/assets/img/icons/post_user_icon.png',
-        commentIcon: '/assets/img/icons/post_comment_icon.png',
-      },
-      {
-        title: 'This Working World and Infection Prevention.',
-        subtitle:
-          'Medical standard chunk ofI nibh velit auctor aliquet sollic tudin.',
-        date: 'May 02',
-        category: 'Medical',
-        author: 'Admin',
-        thumbnail: '/assets/img/post_3.jpeg',
-        btnText: 'Read More',
-        postLink: '/blog/infection-prevention',
-        authorIcon: '/assets/img/icons/post_user_icon.png',
-        commentIcon: '/assets/img/icons/post_comment_icon.png',
-      },
-      {
-        title: 'Medical Of This Working Health Blog',
-        subtitle:
-          'Medical standard chunk ofI nibh velit auctor aliquet sollic tudin.',
-        date: 'May 02',
-        category: 'Medical',
-        author: 'Admin',
-        thumbnail: '/assets/img/post_1.jpeg',
-        btnText: 'Read More',
-        postLink: '/blog/medical-health-blog-2',
-        authorIcon: '/assets/img/icons/post_user_icon.png',
-        commentIcon: '/assets/img/icons/post_comment_icon.png',
-      },
-    ],
+    postsData: [],
   };
 
 const home2 = () => {
