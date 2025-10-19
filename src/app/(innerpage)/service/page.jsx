@@ -35,7 +35,7 @@ const Page = () => {
 
         // Transform the data to match the component's expected format
         const transformedServices = data.map((service, index) => ({
-          backgroundImage: '/assets/img/service_bg.jpg',
+          backgroundImage: service.featured_image || '/assets/img/service_bg.jpg',
           iconUrl: `/assets/img/icons/service_icon_${(index % 8) + 1}.png`,
           index: String(index + 1).padStart(2, '0'),
           title: service.title,

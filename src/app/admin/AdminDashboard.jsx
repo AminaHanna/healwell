@@ -5,6 +5,7 @@ import BlogManager from './components/BlogManager';
 import ServiceManager from './components/ServiceManager';
 import CareersManager from './components/CareersManager';
 import DashboardOverview from './components/DashboardOverview';
+import PageSettingsManager from './components/PageSettingsManager';
 
 export default function AdminDashboard() {
   const [activeTab, setActiveTab] = useState('dashboard');
@@ -58,6 +59,13 @@ export default function AdminDashboard() {
               <span className="tab-icon">💼</span>
               Careers
             </button>
+            <button
+              className={`admin-nav-tab ${activeTab === 'settings' ? 'active' : ''}`}
+              onClick={() => setActiveTab('settings')}
+            >
+              <span className="tab-icon">⚙️</span>
+              Settings
+            </button>
           </div>
         </div>
       </nav>
@@ -69,6 +77,7 @@ export default function AdminDashboard() {
           {activeTab === 'blogs' && <BlogManager />}
           {activeTab === 'services' && <ServiceManager />}
           {activeTab === 'careers' && <CareersManager />}
+          {activeTab === 'settings' && <PageSettingsManager />}
         </div>
       </main>
     </div>

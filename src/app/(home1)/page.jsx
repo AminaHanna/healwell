@@ -506,7 +506,7 @@ const Page = () => {
         if (Array.isArray(data)) {
           // Map Supabase services to component format
           const mappedServices = data.slice(0, 6).map((service, index) => ({
-            backgroundImage: '/assets/img/service_bg.jpg',
+            backgroundImage: service.featured_image || '/assets/img/service_bg.jpg',
             iconUrl: service.icon || '/assets/img/icons/service_icon_1.png',
             index: String(index + 1).padStart(2, '0'),
             title: service.title,
