@@ -76,7 +76,7 @@ const About = ({ data }) => {
                   </div>
                 ))}
               </div>
-              <div className="cs_about_iconbox">
+              {/* <div className="cs_about_iconbox">
                 <div className="cs_about_iconbox_icon cs_center">
                   <i>
                     <FaRegCircleCheck />
@@ -86,7 +86,7 @@ const About = ({ data }) => {
                   className="cs_about_iconbox_subtitle"
                   dangerouslySetInnerHTML={{ __html: data.service }}
                 />
-              </div>
+              </div> */}
               <Button
                 btnText={data.btnText}
                 variant={"cs_btn cs_style_1 cs_color_1"}

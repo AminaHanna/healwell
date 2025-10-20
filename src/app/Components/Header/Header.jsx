@@ -35,7 +35,7 @@ const Header = ({ isTopBar, variant }) => {
       },
       { label: 'About', href: '/about' },
       {
-        label: 'Service',
+        label: 'Services',
         href: '/service',
         // subItems: [
         //   { label: 'Service', href: '/service' },
@@ -123,16 +123,22 @@ const Header = ({ isTopBar, variant }) => {
                       </i>
                       <Link href={`mailto:${menu.email}`}>{menu.email}</Link>
                     </li>
-                    <li>
+                    {/* <li>
+                      <i>
+                        <FaLocationDot />
+                      </i>
+                      {menu.location}
+                    </li> */}
+                  </ul>
+                </div>
+                <div className="cs_top_header_right">
+                  <li className='d-flex gap-1 justify-content-center align-items-center'>
                       <i>
                         <FaLocationDot />
                       </i>
                       {menu.location}
                     </li>
-                  </ul>
-                </div>
-                <div className="cs_top_header_right">
-                  <div className="cs_social_btns cs_style_1">
+                  {/* <div className="cs_social_btns cs_style_1">
                     <Link href="/" className="cs_center">
                       <i>
                         <FaFacebookF />
@@ -153,7 +159,7 @@ const Header = ({ isTopBar, variant }) => {
                         <FaInstagram />
                       </i>
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -231,7 +237,7 @@ const Header = ({ isTopBar, variant }) => {
                     <span></span>
                   </span>
                 </div>
-                <div className="cs_search_wrap">
+                {/* <div className="cs_search_wrap">
                   <div
                     className="cs_search_toggle cs_center"
                     onClick={() => setIsSearchActive(!isSearchActive)}
@@ -259,13 +265,13 @@ const Header = ({ isTopBar, variant }) => {
                       </button>
                     </div>
                   </form>
-                </div>
-                <Link href={menu.btnUrl} className="cs_btn cs_style_1 cs_color_1">
+                </div> */}
+                {/* <Link href={menu.btnUrl} className="cs_btn cs_style_1 cs_color_1">
                   <span>{menu.btnText}</span>
                   <i>
                     <FaAnglesRight />
                   </i>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

@@ -18,7 +18,7 @@ const ContactSection = ({ data, reverseOrder }) => {
                   </div>
                   <div className="cs_contact_bg_shape">
                     <div className="cs_white_bg_shape" />
-                    <div className={`cs_iconbox ${data.iconBox.style}`}>
+                    {/* <div className={`cs_iconbox ${data.iconBox.style}`}>
                       <div className="cs_iconbox_icon cs_center">
                       <Image src={data.iconBox.icon}  alt="img" width={62} height={62}   />
                       </div>
@@ -30,7 +30,7 @@ const ContactSection = ({ data, reverseOrder }) => {
                           {data.iconBox.subtitle}
                         </p>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -78,7 +78,7 @@ const ContactSection = ({ data, reverseOrder }) => {
                       defaultValue={""}
                     />
                   </div>
-                  <div className="col-lg-12">
+                  {/* <div className="col-lg-12">
                     <input
                       type="text"
                       className="cs_form_field"
@@ -89,7 +89,7 @@ const ContactSection = ({ data, reverseOrder }) => {
                       className="cs_form_field cs_code_input"
                       defaultValue="5RLOpW"
                     />
-                  </div>
+                  </div> */}
                   <div className="col-lg-12">
                     <button
                       type="submit"
@@ -147,7 +147,7 @@ const ContactSection = ({ data, reverseOrder }) => {
                       defaultValue={""}
                     />
                   </div>
-                  <div className="col-lg-12">
+                  {/* <div className="col-lg-12">
                     <input
                       type="text"
                       className="cs_form_field"
@@ -158,7 +158,7 @@ const ContactSection = ({ data, reverseOrder }) => {
                       className="cs_form_field cs_code_input"
                       defaultValue="5RLOpW"
                     />
-                  </div>
+                  </div> */}
                   <div className="col-lg-12">
                     <button
                       type="submit"

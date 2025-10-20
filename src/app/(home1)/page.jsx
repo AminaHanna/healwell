@@ -211,38 +211,38 @@ const heroData = {
   
   const sectionData = {
     subtitle: 'WHY CHOOSE US',
-    title: 'Medical Ready To Get This <br /> Health Solution.',
+    title: 'Guided by Purpose, Driven by Care',
     services: [
       {
         iconUrl: '/assets/img/icons/service_icon_9.png',
-        title: 'Expert Care',
-        subtitle: 'Medical competitor research startup to financial',
+        title: 'Reliability',
+        subtitle: 'We never compromise on showing up when needed.',
       },
       {
         iconUrl: '/assets/img/icons/service_icon_10.png',
-        title: 'Emergency Help',
-        subtitle: 'Medical competitor research startup to financial',
+        title: 'Integrity',
+        subtitle: 'Transparent and honest relationships — always.',
       },
       {
         iconUrl: '/assets/img/icons/service_icon_11.png',
-        title: 'Qualified Doctors',
-        subtitle: 'Medical competitor research startup to financial',
+        title: 'Compassion',
+        subtitle: 'Every shift we fill contributes to better patient outcomes.',
       },
       {
         iconUrl: '/assets/img/icons/service_icon_12.png',
-        title: 'Medical Advices',
-        subtitle: 'Medical competitor research startup to financial',
+        title: 'Responsiveness',
+        subtitle: 'Timing is everything, and we act fast.',
       },
       {
         iconUrl: '/assets/img/icons/service_icon_13.png',
-        title: 'Medical Research',
-        subtitle: 'Medical competitor research startup to financial',
+        title: 'Inclusion',
+        subtitle: 'We celebrate diversity and ensure equitable staffing opportunities.',
       },
-      {
-        iconUrl: '/assets/img/icons/service_icon_14.png',
-        title: 'Affordable Prices',
-        subtitle: 'Medical competitor research startup to financial',
-      },
+      // {
+      //   iconUrl: '/assets/img/icons/service_icon_14.png',
+      //   title: 'Affordable Prices',
+      //   subtitle: 'Medical competitor research startup to financial',
+      // },
     ],
   };
   
@@ -368,10 +368,10 @@ const heroData = {
   const ctaData1 = {
     videoLink: 'https://www.youtube.com/embed/rRid6GCJtgc',
     videoButtonText: 'WATCH VIDEO',
-    subtitle: 'OUR WATCH VIDEO',
-    title: 'Professional Medical Care Measure Medical.',
+    subtitle: 'Join the Healwell Network',
+    title: 'Flexible. Rewarding. Empowering.',
     description:
-      'We are privileged to work with hundreds of future-thinking medial, including many of the world’s top hardware, software, and brands , feel safe and comfortable in establishing.',
+      'Choose when and where you work — and make a real difference in patient care. From per diem to PRN shifts, Healwell offers the freedom you deserve with the support you can trust.',
     buttonLink: '/contact',
     buttonText: 'Video More',
     brandImage: '/assets/img/medical_brand.png',
