@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import BlogManager from './components/BlogManager';
 import ServiceManager from './components/ServiceManager';
 import CareersManager from './components/CareersManager';
+import PortfolioManager from './components/PortfolioManager';
 import DashboardOverview from './components/DashboardOverview';
 import PageSettingsManager from './components/PageSettingsManager';
 
@@ -53,6 +54,13 @@ export default function AdminDashboard() {
               Services
             </button>
             <button
+              className={`admin-nav-tab ${activeTab === 'portfolio' ? 'active' : ''}`}
+              onClick={() => setActiveTab('portfolio')}
+            >
+              <span className="tab-icon">🎯</span>
+              Portfolio
+            </button>
+            <button
               className={`admin-nav-tab ${activeTab === 'careers' ? 'active' : ''}`}
               onClick={() => setActiveTab('careers')}
             >
@@ -76,6 +84,7 @@ export default function AdminDashboard() {
           {activeTab === 'dashboard' && <DashboardOverview />}
           {activeTab === 'blogs' && <BlogManager />}
           {activeTab === 'services' && <ServiceManager />}
+          {activeTab === 'portfolio' && <PortfolioManager />}
           {activeTab === 'careers' && <CareersManager />}
           {activeTab === 'settings' && <PageSettingsManager />}
         </div>

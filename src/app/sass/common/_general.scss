@@ -842,6 +842,33 @@ label {
       }
     }
   }
+
+  &.text-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    .cs_section_heading_left {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .cs_section_heading_right {
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .cs_section_subtitle {
+      justify-content: center;
+    }
+
+    .cs_shape_left {
+      display: none;
+    }
+  }
 }
 
 .cs_about.cs_style_1 {

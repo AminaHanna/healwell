@@ -16,6 +16,7 @@
 @import 'shortcode/testimonial';
 @import 'shortcode/counter';
 @import 'shortcode/casestudie';
+@import 'shortcode/hospital-case-study';
 @import 'shortcode/team';
 @import 'shortcode/imagebox';
 @import 'shortcode/pricing';
@@ -183,4 +184,158 @@
   stroke: var(--rr--stroke-off-color, currentColor);
   width: 30px;
   padding-left: 5px;
+}
+
+/*--------------------------------
+ Portfolio Section Header
+ -------------------------------*/
+.cs_portfolio_section_header {
+  text-align: center;
+  margin-bottom: 40px;
+
+  .cs_section_subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: var(--heading-font);
+
+    @media (max-width: 767px) {
+      font-size: 32px;
+    }
+  }
+
+  .cs_section_description {
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+    color: var(--body-color);
+  }
+}
+
+/*--------------------------------
+ Proven Track Record Section
+ -------------------------------*/
+.cs_proven_track_record {
+  margin-bottom: 60px;
+
+  .track_record_header {
+    text-align: center;
+    margin-bottom: 50px;
+
+    h2 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      font-family: var(--heading-font);
+    }
+
+    p {
+      font-size: 16px;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+  }
+
+  .track_record_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    @media (max-width: 1199px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+
+  .track_record_card {
+    background-color: var(--white);
+    padding: 40px 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.4s ease;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid var(--accent-color);
+
+    @media (max-width: 767px) {
+      padding: 30px 20px;
+    }
+
+    &:hover {
+      box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
+      transform: translateY(-5px);
+
+      .card_icon {
+        background-color: var(--blue-color);
+        color: var(--white);
+      }
+    }
+
+    .card_icon {
+      width: 70px;
+      height: 70px;
+      background-color: #f0f7ff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 25px;
+      transition: all 0.4s ease;
+      color: var(--accent-color);
+      flex-shrink: 0;
+
+      svg {
+        width: 36px;
+        height: 36px;
+      }
+    }
+
+    h3 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      font-family: var(--heading-font);
+    }
+
+    .track_record_metrics {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        font-size: 15px;
+        color: var(--body-color);
+        margin-bottom: 12px;
+        line-height: 1.6;
+        font-weight: 500;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &::before {
+          content: '✓ ';
+          color: var(--accent-color);
+          font-weight: 700;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
 }

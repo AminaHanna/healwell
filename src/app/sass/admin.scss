@@ -367,7 +367,8 @@ $body-font: 'Rubik', sans-serif;
 
   .blog-form,
   .service-form,
-  .career-form {
+  .career-form,
+  .portfolio-form {
     padding: 25px;
 
     .form-group {
@@ -384,6 +385,7 @@ $body-font: 'Rubik', sans-serif;
       input[type="text"],
       input[type="url"],
       input[type="number"],
+      input[type="file"],
       textarea,
       select {
         width: 100%;
@@ -456,6 +458,69 @@ $body-font: 'Rubik', sans-serif;
 
         span {
           margin: 0;
+        }
+      }
+
+      // Key Results Input Section
+      .key-results-input {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 15px;
+
+        input {
+          flex: 1;
+        }
+
+        button {
+          padding: 12px 20px;
+          white-space: nowrap;
+        }
+      }
+
+      // Key Results List
+      .key-results-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .key-result-item {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          background-color: $light-gray;
+          padding: 8px 12px;
+          border-radius: 6px;
+          font-size: 13px;
+          color: $body-color;
+
+          span {
+            flex: 1;
+          }
+
+          .remove-btn {
+            background: none;
+            border: none;
+            color: $danger-color;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 0;
+            @include transition;
+
+            &:hover {
+              color: darken($danger-color, 10%);
+            }
+          }
+        }
+      }
+
+      // Image Preview
+      .image-preview {
+        margin-top: 15px;
+
+        img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 8px;
         }
       }
     }
