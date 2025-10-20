@@ -15,6 +15,7 @@ import CtaSection1 from '../Components/CtaSection/CtaSection1';
 import MedicalTabSection from '../Components/MedicalTabSection';
 import ContactSection2 from '../Components/ContactSection/ContactSection2';
 import BlogSection from '../Components/BlogsSection';
+import { stripHtmlAndTruncateRegex } from '@/lib/htmlUtils';
 
 const heroData = {
     primarySlider: [
@@ -539,7 +540,7 @@ const Page = () => {
           // Map Supabase blogs to component format
           const mappedBlogs = data.slice(0, 4).map((blog) => ({
             title: blog.title,
-            subtitle: blog.excerpt || blog.content?.substring(0, 100) || 'Read more about this topic',
+            subtitle: blog.excerpt || stripHtmlAndTruncateRegex(blog.content, 100) || 'Read more about this topic',
             date: new Date(blog.created_at).toLocaleDateString('en-US', {
               year: 'numeric',
               month: 'short',

@@ -4,6 +4,7 @@ import BlogsSection1 from '@/app/Components/BlogsSection/BlogsSection1';
 import PageHeading from '@/app/Components/PageHeading';
 import Section from '@/app/Components/Section';
 import React, { useEffect, useState } from 'react';
+import { stripHtmlAndTruncateRegex } from '@/lib/htmlUtils';
 
 const headingData = {
     title: 'Blog Page',
@@ -31,7 +32,7 @@ const Page = () => {
           author: blog.author,
           comments: '0 Comments',
           title: blog.title,
-          subtitle: blog.excerpt || blog.content.substring(0, 100),
+          subtitle: blog.excerpt || stripHtmlAndTruncateRegex(blog.content, 100),
           image: blog.featured_image || '/assets/img/post_1.jpeg',
           link: `/blog/${blog.slug}`,
           linkText: 'Read More',
