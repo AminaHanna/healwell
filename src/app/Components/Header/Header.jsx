@@ -72,6 +72,7 @@ const Header = ({ isTopBar, variant }) => {
       //   ],
       // },
       { label: 'Portfolio', href: '/portfolio' },
+      { label: 'Franchising', href: '/franchising' },
       { label: 'Contact', href: '/contact' },
     ],
     btnUrl: '/contact',

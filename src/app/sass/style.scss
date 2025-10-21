@@ -224,6 +224,420 @@
 }
 
 /*--------------------------------
+ Franchising Page Styles
+ -------------------------------*/
+
+/* Hero Section */
+.cs_franchising_hero {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+
+  h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: var(--heading-font);
+
+    @media (max-width: 767px) {
+      font-size: 36px;
+    }
+  }
+
+  .cs_franchising_hero_text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--body-color);
+  }
+}
+
+/* Franchising Cards */
+.cs_franchising_cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+
+  @media (max-width: 1199px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+
+  .cs_franchising_card {
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.4s ease;
+
+    &:hover {
+      border-color: var(--accent-color);
+      box-shadow: 0 10px 30px rgba(46, 166, 247, 0.15);
+      transform: translateY(-5px);
+    }
+
+    .card_icon {
+      width: 70px;
+      height: 70px;
+      background: linear-gradient(135deg, var(--accent-color) 0%, var(--blue-color) 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 32px;
+      color: var(--white);
+      transition: all 0.4s ease;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      font-family: var(--heading-font);
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--body-color);
+    }
+
+    &:hover .card_icon {
+      transform: scale(1.1);
+    }
+  }
+}
+
+/* Investment Overview */
+.cs_investment_overview {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 50px;
+
+  @media (max-width: 767px) {
+    padding: 30px;
+  }
+}
+
+.cs_investment_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+
+  @media (max-width: 1199px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+
+  .cs_investment_item {
+    text-align: center;
+    padding: 20px;
+    border-right: 1px solid var(--border-color);
+
+    &:nth-child(4n) {
+      border-right: none;
+    }
+
+    @media (max-width: 1199px) {
+      &:nth-child(2n) {
+        border-right: none;
+      }
+    }
+
+    @media (max-width: 767px) {
+      border-right: none;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 30px;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    h4 {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--body-color);
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .cs_investment_value {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--blue-color);
+      margin: 0;
+    }
+  }
+}
+
+.cs_requirements {
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-family: var(--heading-font);
+  }
+
+  .cs_requirements_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--body-color);
+
+      svg {
+        color: var(--accent-color);
+        font-size: 18px;
+        flex-shrink: 0;
+      }
+    }
+  }
+}
+
+/* Support Cards */
+.cs_support_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+  @media (max-width: 1199px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+
+  .cs_support_card {
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 40px 30px;
+    transition: all 0.4s ease;
+
+    &:hover {
+      border-color: var(--accent-color);
+      box-shadow: 0 10px 30px rgba(46, 166, 247, 0.15);
+      transform: translateY(-5px);
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 25px;
+      font-family: var(--heading-font);
+    }
+
+    .cs_support_list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        font-size: 14px;
+        line-height: 1.8;
+        color: var(--body-color);
+        padding-left: 0;
+        margin-bottom: 12px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &::before {
+          content: '✓ ';
+          color: var(--accent-color);
+          font-weight: 700;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
+
+/* Markets Grid */
+.cs_markets_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+  @media (max-width: 1199px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+
+  .cs_market_card {
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 40px 30px;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+      border-color: var(--accent-color);
+      box-shadow: 0 10px 30px rgba(46, 166, 247, 0.15);
+      transform: translateY(-5px);
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      font-family: var(--heading-font);
+    }
+
+    .market_info {
+      flex-grow: 1;
+      margin-bottom: 25px;
+
+      p {
+        font-size: 14px;
+        line-height: 1.8;
+        color: var(--body-color);
+        margin-bottom: 12px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        strong {
+          color: var(--heading-color);
+          font-weight: 600;
+        }
+      }
+    }
+
+    .cs_btn {
+      align-self: flex-start;
+    }
+  }
+}
+
+/* Process Timeline */
+.cs_process_timeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+
+  @media (max-width: 1199px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+
+  .cs_process_step {
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.4s ease;
+    position: relative;
+
+    &:hover {
+      border-color: var(--accent-color);
+      box-shadow: 0 10px 30px rgba(46, 166, 247, 0.15);
+      transform: translateY(-5px);
+    }
+
+    .step_number {
+      font-size: 48px;
+      font-weight: 700;
+      color: var(--accent-color);
+      margin-bottom: 15px;
+      font-family: var(--heading-font);
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      font-family: var(--heading-font);
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--body-color);
+      margin: 0;
+    }
+  }
+}
+
+/* CTA Section */
+.cs_franchising_cta {
+  text-align: center;
+  background: linear-gradient(135deg, var(--blue-color) 0%, var(--accent-color) 100%);
+  border-radius: 12px;
+  padding: 60px 40px;
+  color: var(--white);
+
+  @media (max-width: 767px) {
+    padding: 40px 30px;
+  }
+
+  h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--white);
+    font-family: var(--heading-font);
+
+    @media (max-width: 767px) {
+      font-size: 32px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .cs_btn {
+    background-color: var(--white);
+    color: var(--blue-color);
+
+    &:hover {
+      background-color: var(--accent-color);
+      color: var(--white);
+    }
+  }
+}
+
+/*--------------------------------
  Proven Track Record Section
  -------------------------------*/
 .cs_proven_track_record {
