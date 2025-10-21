@@ -30,10 +30,10 @@ const Page = () => {
 
       {/* Hero Section */}
       <Section
-        topSpaceLg="70"
-        topSpaceMd="110"
-        bottomSpaceLg="80"
-        bottomSpaceMd="120"
+        topSpaceLg="40"
+        topSpaceMd="60"
+        bottomSpaceLg="40"
+        bottomSpaceMd="60"
       >
         <div className="container">
           <div className="cs_franchising_hero">
@@ -47,10 +47,10 @@ const Page = () => {
 
       {/* Why Franchise Section */}
       <Section
-        topSpaceLg="70"
-        topSpaceMd="110"
-        bottomSpaceLg="80"
-        bottomSpaceMd="120"
+        topSpaceLg="40"
+        topSpaceMd="60"
+        bottomSpaceLg="40"
+        bottomSpaceMd="60"
       >
         <div className="container">
           <SectionHeading
@@ -103,10 +103,10 @@ const Page = () => {
 
       {/* Investment Overview Section */}
       <Section
-        topSpaceLg="70"
-        topSpaceMd="110"
-        bottomSpaceLg="80"
-        bottomSpaceMd="120"
+        topSpaceLg="40"
+        topSpaceMd="60"
+        bottomSpaceLg="40"
+        bottomSpaceMd="60"
       >
         <div className="container">
           <SectionHeading
@@ -157,10 +157,10 @@ const Page = () => {
 
       {/* Support System Section */}
       <Section
-        topSpaceLg="70"
-        topSpaceMd="110"
-        bottomSpaceLg="80"
-        bottomSpaceMd="120"
+        topSpaceLg="40"
+        topSpaceMd="60"
+        bottomSpaceLg="40"
+        bottomSpaceMd="60"
       >
         <div className="container">
           <SectionHeading
@@ -216,10 +216,10 @@ const Page = () => {
 
       {/* Available Markets Section */}
       <Section
-        topSpaceLg="70"
-        topSpaceMd="110"
-        bottomSpaceLg="80"
-        bottomSpaceMd="120"
+        topSpaceLg="40"
+        topSpaceMd="60"
+        bottomSpaceLg="40"
+        bottomSpaceMd="60"
       >
         <div className="container">
           <SectionHeading
@@ -326,10 +326,10 @@ const Page = () => {
 
       {/* Application Process Section */}
       <Section
-        topSpaceLg="70"
-        topSpaceMd="110"
-        bottomSpaceLg="80"
-        bottomSpaceMd="120"
+        topSpaceLg="40"
+        topSpaceMd="60"
+        bottomSpaceLg="40"
+        bottomSpaceMd="60"
       >
         <div className="container">
           <SectionHeading
@@ -370,10 +370,10 @@ const Page = () => {
 
       {/* CTA Section */}
       <Section
-        topSpaceLg="70"
-        topSpaceMd="110"
-        bottomSpaceLg="80"
-        bottomSpaceMd="120"
+        topSpaceLg="40"
+        topSpaceMd="60"
+        bottomSpaceLg="40"
+        bottomSpaceMd="60"
       >
         <div className="container">
           <div className="cs_franchising_cta">

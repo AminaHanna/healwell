@@ -42,6 +42,7 @@ const Header = ({ isTopBar, variant }) => {
         //   { label: 'Service Details', href: '/service/service-details' },
         // ],
       },
+      { label: 'Portfolio', href: '/portfolio' },
       {
         label: 'Blog',
         href: '/blog',
@@ -50,6 +51,7 @@ const Header = ({ isTopBar, variant }) => {
         //   { label: 'Blog Details', href: '/blog/medical-health-blog' },
         // ],
       },
+      { label: 'Franchising', href: '/franchising' },
       {
         label: 'Careers',
         href: '/careers',
@@ -71,9 +73,7 @@ const Header = ({ isTopBar, variant }) => {
           // { label: 'Contact', href: '/contact' },
       //   ],
       // },
-      { label: 'Portfolio', href: '/portfolio' },
-      { label: 'Franchising', href: '/franchising' },
-      { label: 'Contact', href: '/contact' },
+      { label: 'Contact Us', href: '/contact' },
     ],
     btnUrl: '/contact',
     btnText: 'Contact Now',
