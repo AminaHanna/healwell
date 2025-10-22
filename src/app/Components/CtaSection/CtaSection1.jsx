@@ -41,13 +41,13 @@ const CtaSection1 = ({ data }) => {
                 SectionTitle={data.title}
                 SectionDescription={data.description}
               />
-              <div className="cs_height_44 cs_height_lg_20" />
-              <Button
+              {/* <div className="cs_height_44 cs_height_lg_20" /> */}
+              {/* <Button
                 btnText={data.buttonText}
                 variant={"cs_btn cs_style_1 cs_color_3"}
                 btnUrl="{data.buttonLink}"
                 btnIcons={<FaAnglesRight />}
-              />
+              /> */}
             </div>
           </div>
         </div>

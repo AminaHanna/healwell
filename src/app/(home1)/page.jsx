@@ -146,7 +146,7 @@ const heroData = {
   
   const teamData = {
     subtitle: 'OUR TEAM MEMBER',
-    title: 'Meet Our Specialist This <br />Doctor Meeting',
+    title: 'Our Leadership',
     sliderData: [
       {
         name: 'Dr. Norma Pedric',

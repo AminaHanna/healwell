@@ -71,7 +71,7 @@ const headingData = {
   
   const teamData = {
     subtitle: 'OUR TEAM MEMBER',
-    title: ' Meet Our Specialist This <br />Doctor Meeting',
+    title: ' Our Leadership',
     sliderData: [
       {
         name: 'Dr. Norma Pedric',
@@ -227,7 +227,7 @@ const page = () => {
       {/* End Counter Section */}
 
       {/* Start CTA Section */}
-      <Section
+      {/* <Section
         topSpaceLg="70"
         topSpaceMd="110"
         bottomSpaceLg="80"
@@ -236,7 +236,7 @@ const page = () => {
         backgroundImage="/assets/img/cta_bg_1.jpeg"
       >
         <CtaSection1 data={ctaData} />
-      </Section>
+      </Section> */}
       {/* End CTA Section */}
 
       {/* Start Team Section */}
