@@ -16,14 +16,14 @@ const CtaSection = ({ data = {} }) => {
               <p className="cs_cta_subtitle">{data.subtitle}</p>
             </div>
           </div>
-          <div className="cs_cta_right">
+          {/* <div className="cs_cta_right">
             <Button
               btnText={data.buttonText}
               variant={"cs_btn cs_style_1 cs_color_3"}
               btnIcons={<FaAnglesRight />}
               btnUrl={data.buttonUrl}
             />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="cs_cta_shape" />

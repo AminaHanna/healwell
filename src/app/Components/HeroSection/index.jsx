@@ -59,12 +59,12 @@ const HeroSection = ({ data }) => {
                         btnIcons={<FaAnglesRight />}
                         btnUrl={firstBanner.link}
                       />
-                      <Button
+                      {/* <Button
                         btnText={firstBanner.btnText2}
                         variant={"cs_btn cs_style_1 cs_color_2"}
                         btnIcons={<FaAnglesRight />}
                         btnUrl={firstBanner.link2}
-                      />
+                      /> */}
                     </div>
                   </div>
                   <div className="cs_hero_shape">

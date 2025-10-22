@@ -43,7 +43,7 @@ const Service = ({ data, cardBg }) => {
             </div>
           ))}
         </div>
-        <div className="cs_service_footer" data-aos="fade-up">
+        {/* <div className="cs_service_footer" data-aos="fade-up">
           <div className="cs_service_footer_icon">
           <Image src={data.footerIcon} alt="img" width={22} height={20}   />
           </div>
@@ -58,7 +58,7 @@ const Service = ({ data, cardBg }) => {
               </span>
             </Link>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

@@ -5,7 +5,7 @@ import Header from '../Components/Header/Header';
 const layout = ({ children }) => {
     return (
         <div className='main-page-area2'>
-            <Header isTopBar={true}></Header>
+            <Header isTopBar={false}></Header>
             {children}
             <Footer></Footer>
         </div>

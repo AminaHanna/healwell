@@ -691,14 +691,14 @@ const Page = () => {
       {/* End Contact Solution */}
 
       {/* Start Blog Section */}
-      <Section
+      {/* <Section
         topSpaceLg="70"
         topSpaceMd="110"
         bottomSpaceLg="80"
         bottomSpaceMd="120"
       >
         <BlogSection data={displayBlogsData} />
-      </Section>
+      </Section> */}
       {/* End Blog Solution */}
     </div>
   );

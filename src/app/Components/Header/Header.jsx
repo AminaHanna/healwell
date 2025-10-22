@@ -43,18 +43,14 @@ const Header = ({ isTopBar, variant }) => {
         // ],
       },
       { label: 'Portfolio', href: '/portfolio' },
-      {
-        label: 'Blog',
-        href: '/blog',
-        // subItems: [
-        //   { label: 'Blog List', href: '/blog' },
-        //   { label: 'Blog Details', href: '/blog/medical-health-blog' },
-        // ],
-      },
-      { label: 'Franchising', href: '/franchising' },
+      // { label: 'Franchising', href: '/franchising' },
       {
         label: 'Careers',
         href: '/careers',
+      },
+      {
+        label: 'Blog',
+        href: '/blog',
         // subItems: [
         //   { label: 'Blog List', href: '/blog' },
         //   { label: 'Blog Details', href: '/blog/medical-health-blog' },
@@ -167,7 +163,7 @@ const Header = ({ isTopBar, variant }) => {
             </div>
           </div>
         )}
-        <div className="cs_main_header">
+        <div className="cs_main_header bg-white">
           <div className="container">
             <div className="cs_main_header_in">
               <div className="cs_main_header_left">
