@@ -16,6 +16,7 @@ import MedicalTabSection from '../Components/MedicalTabSection';
 import ContactSection2 from '../Components/ContactSection/ContactSection2';
 import BlogSection from '../Components/BlogsSection';
 import { stripHtmlAndTruncateRegex } from '@/lib/htmlUtils';
+import TestimonialSection from '../Components/TestimonialSection';
 
 const heroData = {
     primarySlider: [
@@ -26,10 +27,10 @@ const heroData = {
           'Connecting healthcare facilities with exceptional PRN and per diem professionals. Reliable staffing solutions built on integrity, compassion, and responsiveness.',
         // contactTitle: 'Receive Medical Service.',
         // contact: 'Call Us at: (+2) 56 54 1453',
-        btnText1: 'Contact Now',
+        btnText1: 'Find Staff Now',
         link: '/contact',
-        btnText2: 'Discover More',
-        link2: '/about',
+        btnText2: 'Join Our Team',
+        link2: '/careers',
         iconImgUrl: '/assets/img/icons/hero_icon.png',
       },
       {
@@ -74,6 +75,28 @@ const heroData = {
     buttonUrl: '/appointments',
     buttonText: 'Booking Now',
   };
+
+  const testimonialData = {
+    thumbnail: '/assets/img/testimonial_1.png',
+    testimonials: [
+      {
+        rating: 2,
+        subtitle:
+          'Healwell Healthcare has been our trusted partner for three years. Their reliability and the quality of professionals they provide have been instrumental in maintaining our patient care standards.',
+        avatar: '/assets/img/avatar_1.png',
+        name: 'Sarah Johnson, RN',
+        position: 'Director of Nursing, Metropolitan Medical Center',
+      },
+      {
+        rating: 4,
+        subtitle:
+          'Working with Healwell has transformed our staffing needs. They understand the unique challenges of healthcare and provide professionals who are not just skilled, but compassionate and dedicated to patient care.',
+        avatar: '/assets/img/avatar_2.png',
+        name: 'John Doe',
+        position: 'Healthcare Professional',
+      },
+    ],
+  };
   
   const aboutData = {
     sectionSubtitle: 'OUR STORY',
@@ -111,23 +134,23 @@ const heroData = {
   const countersData = [
     {
       iconUrl: '/assets/img/icons/counter_icon_1.png',
-      number: '567+',
-      title: 'Active Clients',
+      number: '500+',
+      title: 'Healthcare Facilities Served',
     },
     {
       iconUrl: '/assets/img/icons/counter_icon_2.png',
-      number: '23K+',
-      title: 'Team Support',
+      number: '2,000+',
+      title: 'Qualified Professionals',
     },
     {
       iconUrl: '/assets/img/icons/counter_icon_3.png',
-      number: '241+',
-      title: 'Projects Complete',
+      number: '98%',
+      title: 'Client Satisfaction Rate',
     },
     {
       iconUrl: '/assets/img/icons/counter_icon_4.png',
-      number: '16K+',
-      title: 'Award Winner',
+      number: '24/7',
+      title: 'Emergency Response Time',
     },
   ];
   
@@ -660,6 +683,18 @@ const Page = () => {
         <ChooseUs data={sectionData} />
       </Section>
       {/* End Why Choose Us Section */}
+
+      {/* testimonial */}
+      <Section
+        topSpaceLg="70"
+        topSpaceMd="110"
+        bottomSpaceLg="80"
+        bottomSpaceMd="120"
+        className="cs_testimonial_area"
+        backgroundImage="/assets/img/testomonial_bg_1.png"
+      >
+        <TestimonialSection data={testimonialData} />
+      </Section>
 
       {/* Start Projects Section */}
       {/* <Section topSpaceLg="70" topSpaceMd="110" className="cs_tabs">

@@ -33,11 +33,11 @@ const HeroSection = ({ data }) => {
                 <div className="cs_hero_text">
                   <div className="cs_hero_text_in">
                     <h1
-                      className="cs_hero_title"
+                      className="cs_hero_title text-white"
                       dangerouslySetInnerHTML={{ __html: firstBanner.title }}
                     />
                     <p
-                      className="cs_hero_subtitle"
+                      className="cs_hero_subtitle text-white"
                       dangerouslySetInnerHTML={{
                         __html: firstBanner.contactSubtitle,
                       }}
@@ -59,12 +59,12 @@ const HeroSection = ({ data }) => {
                         btnIcons={<FaAnglesRight />}
                         btnUrl={firstBanner.link}
                       />
-                      {/* <Button
+                      <Button
                         btnText={firstBanner.btnText2}
                         variant={"cs_btn cs_style_1 cs_color_2"}
                         btnIcons={<FaAnglesRight />}
                         btnUrl={firstBanner.link2}
-                      /> */}
+                      />
                     </div>
                   </div>
                   <div className="cs_hero_shape">
