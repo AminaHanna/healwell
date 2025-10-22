@@ -23,9 +23,18 @@ const HeroSection1 = ({ data }) => {
     <>
       <section>
         <div
-          className="cs_hero cs_style_2 cs_center cs_bg_filed"
-          style={{ backgroundImage: `url(${data.backgroundImage})` }}
+          className="cs_hero cs_style_2 cs_center cs_bg_filed cs_hero_video_wrapper"
         >
+          <video
+            className="cs_hero_video"
+            autoPlay
+            loop
+            muted
+            playsInline
+          >
+            <source src="/assets/video/banner_video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
           <div className="container">
             <div className="cs_hero_text">
               <div className="cs_hero_text_in" data-aos="fade">
