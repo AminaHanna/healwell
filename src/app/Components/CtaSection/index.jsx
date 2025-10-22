@@ -1,6 +1,7 @@
 import { FaAnglesRight } from "react-icons/fa6";
 import Button from "../Buttons";
 import Image from "next/image";
+import AnimatedServiceNames from "./AnimatedServiceNames";
 
 const CtaSection = ({ data = {} }) => {
   return (
@@ -12,8 +13,7 @@ const CtaSection = ({ data = {} }) => {
             <Image src={data?.imageUrl} alt="img" width={200} height={190}   />
             </div>
             <div className="cs_cta_info">
-              <h2 className="cs_cta_title">{data.title}</h2>
-              <p className="cs_cta_subtitle">{data.subtitle}</p>
+              <AnimatedServiceNames />
             </div>
           </div>
           {/* <div className="cs_cta_right">
