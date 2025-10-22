@@ -7,6 +7,7 @@ import CtaSection from '../Components/CtaSection';
 import About from '../Components/About';
 import CounterSection from '../Components/FunSection/CounterSection';
 import Service from '../Components/Service';
+import CoreValuesSection from '../Components/CoreValuesSection';
 import TeamSection from '../Components/TeamSection';
 import BrandsSlider from '../Components/BrandsSection';
 import ChooseUs from '../Components/ChooseUs';
@@ -670,6 +671,18 @@ const Page = () => {
       </Section> */}
 
       {/* End Brand Section */}
+
+      {/* Start Core Values Section */}
+      <Section
+        topSpaceLg="70"
+        topSpaceMd="110"
+        bottomSpaceLg="80"
+        bottomSpaceMd="120"
+        className={'cs_gray_bg'}
+      >
+        <CoreValuesSection />
+      </Section>
+      {/* End Core Values Section */}
 
       {/* Start Why Choose Us Section */}
       <Section
