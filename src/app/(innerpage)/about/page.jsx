@@ -4,7 +4,9 @@ import CounterSection2 from '@/app/Components/FunSection/CounterSection2';
 import PageHeading from '@/app/Components/PageHeading';
 import Section from '@/app/Components/Section';
 import TeamSection from '@/app/Components/TeamSection';
+import SectionHeading from '@/app/Components/SectionHeading';
 import React from 'react';
+import { FaBullseye, FaEye } from 'react-icons/fa6';
 
 const headingData = {
     title: 'About Page',
@@ -158,6 +160,60 @@ const page = () => {
         <About data={aboutData} />
       </Section>
       {/* End About Section */}
+
+      {/* Start Mission and Vision Section */}
+      <Section
+        topSpaceLg="70"
+        topSpaceMd="110"
+        bottomSpaceLg="80"
+        bottomSpaceMd="120"
+        className={'cs_mission_vision_section'}
+      >
+        <div className="container">
+          {/* Section Heading */}
+          <div className="cs_mission_vision_heading">
+            <SectionHeading
+              SectionSubtitle="OUR MISSION & VISION"
+              SectionTitle="What Drives Us"
+              variant="text-center"
+            />
+          </div>
+
+          {/* Cards Container */}
+          <div className="cs_mission_vision_container">
+            {/* Mission Card */}
+            <div className="cs_mission_vision_card cs_mission_card">
+              <div className="cs_mission_vision_card_inner">
+                <div className="cs_mission_vision_icon_wrapper">
+                  <div className="cs_mission_vision_icon">
+                    <FaBullseye />
+                  </div>
+                </div>
+                <h3 className="cs_mission_vision_title">Our Mission</h3>
+                <p className="cs_mission_vision_text">
+                  To bridge the gap between exceptional healthcare professionals and the facilities that need them most, ensuring continuity of care and peace of mind for all stakeholders. We are committed to showing up when it matters most, delivering reliable staffing solutions that support both patient outcomes and professional growth.
+                </p>
+              </div>
+            </div>
+
+            {/* Vision Card */}
+            <div className="cs_mission_vision_card cs_vision_card">
+              <div className="cs_mission_vision_card_inner">
+                <div className="cs_mission_vision_icon_wrapper">
+                  <div className="cs_mission_vision_icon">
+                    <FaEye />
+                  </div>
+                </div>
+                <h3 className="cs_mission_vision_title">Our Vision</h3>
+                <p className="cs_mission_vision_text">
+                  To be the most trusted healthcare staffing partner in the region, known for our unwavering commitment to quality, reliability, and the values that make healthcare a calling rather than just a job. We envision a future where staffing challenges never compromise patient care.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+      {/* End Mission and Vision Section */}
 
       {/* Start Counter Section */}
 

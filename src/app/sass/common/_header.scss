@@ -315,6 +315,14 @@
           position: relative;
           height: inherit;
           align-items: center;
+          color: #000;
+          text-decoration: none;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: var(--accent-color);
+            text-decoration: none;
+          }
         }
 
         > ul {
@@ -388,6 +396,14 @@
           display: block;
           line-height: inherit;
           padding: 10px 20px;
+          color: #000;
+          text-decoration: none;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: var(--accent-color);
+            text-decoration: none;
+          }
         }
 
         ul {
@@ -616,6 +632,14 @@
         display: block;
         padding: 12px 15px;
         line-height: 16px;
+        color: #000;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: var(--accent-color);
+          text-decoration: none;
+        }
       }
       > li {
         > a {

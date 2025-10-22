@@ -56,7 +56,7 @@ const BlogSection = ({ data }) => {
                         href={post.postLink}
                         className="cs_post_thumbnail position-relative"
                       >
-                        <Image src={post.thumbnail} alt="img" width={396} height={280}   />
+                        <Image src={post.thumbnail} alt="img" width={392} height={277} />
                         <div className="cs_post_category position-absolute">
                           {post.category}
                         </div>
