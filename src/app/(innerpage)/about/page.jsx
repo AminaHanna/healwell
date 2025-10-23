@@ -70,62 +70,8 @@ const headingData = {
     },
   ];
   
-  const teamData = {
-    subtitle: 'OUR TEAM MEMBER',
-    title: ' Our Leadership',
-    sliderData: [
-      {
-        name: 'Dr. Norma Pedric',
-        profession: 'Neurologist',
-        imageUrl: '/assets/img/team_1.jpg',
-        link: '/doctors/doctor-details',
-        facebook: '/',
-        pinterest: '/',
-        twitter: '/',
-        instagram: '/',
-      },
-      {
-        name: 'Dr. James Lewis',
-        profession: 'Neurologist',
-        imageUrl: '/assets/img/team_3.jpg',
-        link: '/doctors/doctor-details',
-        facebook: '/',
-        pinterest: '/',
-        twitter: '/',
-        instagram: '/',
-      },
-      {
-        name: 'Dr. Sophia Anderson',
-        profession: 'Neurologist',
-        imageUrl: '/assets/img/team_4.jpg',
-        link: '/doctors/doctor-details',
-        facebook: '/',
-        pinterest: '/',
-        twitter: '/',
-        instagram: '/',
-      },
-      {
-        name: 'Dr. Michael Thompson',
-        profession: 'Neurologist',
-        imageUrl: '/assets/img/team_5.jpg',
-        link: '/doctors/doctor-details',
-        facebook: '/',
-        pinterest: '/',
-        twitter: '/',
-        instagram: '/',
-      },
-      {
-        name: 'Dr. David Wilson',
-        profession: 'Neurologist',
-        imageUrl: '/assets/img/team_6.jpg',
-        link: '/doctors/doctor-details',
-        facebook: '/',
-        pinterest: '/',
-        twitter: '/',
-        instagram: '/',
-      },
-    ],
-  };
+  // Team data is now fetched dynamically from the API in TeamSection component
+  // No need to hardcode team data here
   
   const ctaData = {
     videoLink: 'https://www.youtube.com/embed/rRid6GCJtgc',
@@ -254,7 +200,6 @@ const page = () => {
         <TeamSection
           hr={true}
           variant={'cs_pagination cs_style_2'}
-          data={teamData}
         />
       </Section>
       {/* End Team Section */}

@@ -7,6 +7,7 @@ import CareersManager from './components/CareersManager';
 import PortfolioManager from './components/PortfolioManager';
 import DashboardOverview from './components/DashboardOverview';
 import PageSettingsManager from './components/PageSettingsManager';
+import TeamMembersManager from './components/TeamMembersManager';
 
 export default function AdminDashboard() {
   const [activeTab, setActiveTab] = useState('dashboard');
@@ -68,6 +69,13 @@ export default function AdminDashboard() {
               Careers
             </button>
             <button
+              className={`admin-nav-tab ${activeTab === 'team' ? 'active' : ''}`}
+              onClick={() => setActiveTab('team')}
+            >
+              <span className="tab-icon">👥</span>
+              Team Members
+            </button>
+            <button
               className={`admin-nav-tab ${activeTab === 'settings' ? 'active' : ''}`}
               onClick={() => setActiveTab('settings')}
             >
@@ -86,6 +94,7 @@ export default function AdminDashboard() {
           {activeTab === 'services' && <ServiceManager />}
           {activeTab === 'portfolio' && <PortfolioManager />}
           {activeTab === 'careers' && <CareersManager />}
+          {activeTab === 'team' && <TeamMembersManager />}
           {activeTab === 'settings' && <PageSettingsManager />}
         </div>
       </main>

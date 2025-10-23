@@ -10,8 +10,52 @@ import SectionHeading from "../SectionHeading";
 import Spacing from "../Spacing";
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const TeamSection = ({ data, bgColor, variant, hr }) => {
+  const [teamData, setTeamData] = useState(data);
+  const [loading, setLoading] = useState(!data);
+
+  useEffect(() => {
+    // If data is provided, use it; otherwise fetch from API
+    if (!data) {
+      fetchTeamMembers();
+    }
+  }, [data]);
+
+  const fetchTeamMembers = async () => {
+    try {
+      setLoading(true);
+      const response = await fetch('/api/team-members?active_only=true');
+      const members = await response.json();
+
+      // Transform API data to match component format
+      const transformedData = {
+        subtitle: 'OUR TEAM MEMBER',
+        title: 'Our Leadership',
+        sliderData: members.map(member => ({
+          name: member.name,
+          profession: member.position,
+          imageUrl: member.image_url || '/assets/img/team_1.jpg',
+          link: '/doctors/doctor-details',
+          facebook: member.social_links?.facebook || '/',
+          pinterest: member.social_links?.pinterest || '/',
+          twitter: member.social_links?.twitter || '/',
+          instagram: member.social_links?.instagram || '/',
+        })),
+      };
+
+      setTeamData(transformedData);
+    } catch (error) {
+      console.error('Error fetching team members:', error);
+      // Fallback to provided data if fetch fails
+      if (data) {
+        setTeamData(data);
+      }
+    } finally {
+      setLoading(false);
+    }
+  };
   const settings = {
     dots: true,
     infinite: true,
@@ -40,12 +84,26 @@ const TeamSection = ({ data, bgColor, variant, hr }) => {
     ],
   };
 
+  if (loading) {
+    return (
+      <div className="about-team">
+        <div className="container">
+          <p>Loading team members...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (!teamData || !teamData.sliderData || teamData.sliderData.length === 0) {
+    return null;
+  }
+
   return (
     <div className="about-team">
       <div className="container">
         <SectionHeading
-          SectionSubtitle={data.subtitle}
-          SectionTitle={data.title}
+          SectionSubtitle={teamData.subtitle}
+          SectionTitle={teamData.title}
           variant={"text-center"}
         />
 
@@ -54,7 +112,7 @@ const TeamSection = ({ data, bgColor, variant, hr }) => {
           <div className="cs_slider_container">
             <div className="cs_slider_wrapper">
               <Slider {...settings}>
-                {data?.sliderData.map((item, index) => (
+                {teamData?.sliderData.map((item, index) => (
                   <div className="cs_slide" key={index}>
                     <div
                       className={`cs_team cs_style_1 ${

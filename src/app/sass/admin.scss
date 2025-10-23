@@ -368,7 +368,8 @@ $body-font: 'Rubik', sans-serif;
   .blog-form,
   .service-form,
   .career-form,
-  .portfolio-form {
+  .portfolio-form,
+  .team-form {
     padding: 25px;
 
     .form-group {
@@ -550,6 +551,13 @@ $body-font: 'Rubik', sans-serif;
 }
 
 // Tables
+.admin-table-wrapper {
+  background: $white;
+  border-radius: 12px;
+  overflow: hidden;
+  @include box-shadow;
+}
+
 .admin-table {
   width: 100%;
   border-collapse: collapse;
@@ -603,15 +611,24 @@ $body-font: 'Rubik', sans-serif;
         }
 
         .service-title,
-        .career-title {
+        .career-title,
+        .team-title {
           display: flex;
           align-items: center;
           gap: 12px;
 
           .service-icon,
-          .career-icon {
+          .career-icon,
+          .team-icon {
             font-size: 24px;
             min-width: 30px;
+          }
+
+          h4 {
+            font-family: $heading-font;
+            font-size: 15px;
+            font-weight: 600;
+            margin: 0;
           }
         }
 
@@ -652,13 +669,36 @@ $body-font: 'Rubik', sans-serif;
               transform: scale(1.2);
             }
 
-            &.btn-edit {
+            &.btn-edit,
+            &.edit-btn {
               color: $accent-blue;
             }
 
-            &.btn-delete {
+            &.btn-delete,
+            &.delete-btn {
               color: $danger-color;
             }
+          }
+        }
+
+        .action-btn {
+          background: none;
+          border: none;
+          font-size: 18px;
+          cursor: pointer;
+          @include transition;
+          padding: 5px 10px;
+
+          &:hover {
+            transform: scale(1.2);
+          }
+
+          &.edit-btn {
+            color: $accent-blue;
+          }
+
+          &.delete-btn {
+            color: $danger-color;
           }
         }
       }
