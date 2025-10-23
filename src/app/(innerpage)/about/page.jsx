@@ -2,6 +2,7 @@ import About from '@/app/Components/About';
 import CtaSection1 from '@/app/Components/CtaSection/CtaSection1';
 import CounterSection2 from '@/app/Components/FunSection/CounterSection2';
 import PageHeading from '@/app/Components/PageHeading';
+import PageSEOContent from '@/app/Components/PageSEOContent';
 import Section from '@/app/Components/Section';
 import TeamSection from '@/app/Components/TeamSection';
 import SectionHeading from '@/app/Components/SectionHeading';
@@ -147,6 +148,10 @@ const page = () => {
       >
         <PageHeading data={headingData} />
       </Section>
+
+      {/* SEO Content Section */}
+      <PageSEOContent pageName="about" />
+
       {/* Start About Section */}
 
       {/* Start About Section */}

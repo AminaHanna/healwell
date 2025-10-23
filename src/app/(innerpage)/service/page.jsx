@@ -1,6 +1,7 @@
 'use client';
 
 import PageHeading from '@/app/Components/PageHeading';
+import PageSEOContent from '@/app/Components/PageSEOContent';
 import Section from '@/app/Components/Section';
 import Service from '@/app/Components/Service';
 import React, { useEffect, useState } from 'react';
@@ -68,6 +69,9 @@ const Page = () => {
       >
         <PageHeading data={headingData} />
       </Section>
+
+      {/* SEO Content Section */}
+      <PageSEOContent pageName="service" />
 
       <Section
           topSpaceLg="80"

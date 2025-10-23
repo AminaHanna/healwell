@@ -1,6 +1,7 @@
 'use client';
 
 import PageHeading from '@/app/Components/PageHeading';
+import PageSEOContent from '@/app/Components/PageSEOContent';
 import Section from '@/app/Components/Section';
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -46,6 +47,9 @@ export default function CareersPage() {
       >
         <PageHeading data={headingData} />
       </Section>
+
+      {/* SEO Content Section */}
+      <PageSEOContent pageName="careers" />
 
       <Section
         topSpaceLg="80"

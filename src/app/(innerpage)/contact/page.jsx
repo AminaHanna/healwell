@@ -1,6 +1,7 @@
 import ContactSection from '@/app/Components/ContactSection';
 import LocationMap from '@/app/Components/LocationMap/Index';
 import PageHeading from '@/app/Components/PageHeading';
+import PageSEOContent from '@/app/Components/PageSEOContent';
 import Section from '@/app/Components/Section';
 import React from 'react';
 
@@ -37,6 +38,9 @@ const page = () => {
       >
         <PageHeading data={headingData} />
       </Section>
+
+      {/* SEO Content Section */}
+      <PageSEOContent pageName="contact" />
 
       <Section
         topSpaceLg="70"

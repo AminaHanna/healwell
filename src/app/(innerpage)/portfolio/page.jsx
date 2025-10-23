@@ -1,6 +1,7 @@
 'use client';
 
 import PageHeading from '@/app/Components/PageHeading';
+import PageSEOContent from '@/app/Components/PageSEOContent';
 import Section from '@/app/Components/Section';
 import React, { useState, useEffect } from 'react';
 import HospitalCaseStudySection from '@/app/Components/HospitalCaseStudyCard/HospitalCaseStudySection';
@@ -112,6 +113,9 @@ export default function PortfolioPage() {
       >
         <PageHeading data={headingData} />
       </Section>
+
+      {/* SEO Content Section */}
+      <PageSEOContent pageName="portfolio" />
 
       <Section
         topSpaceLg="70"

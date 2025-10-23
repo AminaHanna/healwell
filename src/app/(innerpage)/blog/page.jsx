@@ -2,6 +2,7 @@
 
 import BlogsSection1 from '@/app/Components/BlogsSection/BlogsSection1';
 import PageHeading from '@/app/Components/PageHeading';
+import PageSEOContent from '@/app/Components/PageSEOContent';
 import Section from '@/app/Components/Section';
 import React, { useEffect, useState } from 'react';
 import { stripHtmlAndTruncateRegex } from '@/lib/htmlUtils';
@@ -64,6 +65,9 @@ const Page = () => {
       >
         <PageHeading data={headingData} />
       </Section>
+
+      {/* SEO Content Section */}
+      <PageSEOContent pageName="blog" />
 
       {/* Start Blog Section */}
       <Section
