@@ -557,13 +557,13 @@ const Page = () => {
       {/* End Hero Section */}
 
       {/* Start CTA Section */}
-      <Section
+      {/* <Section
         className={
           'cs_cta cs_style_1 cs_blue_bg position-relative overflow-hidden'
         }
       >
         <CtaSection data={ctaData} />
-      </Section>
+      </Section> */}
 
       {/* End CTA Section */}
 
@@ -618,7 +618,7 @@ const Page = () => {
       {/* End Brand Section */}
 
       {/* Start Core Values Section */}
-      <Section
+      {/* <Section
         topSpaceLg="70"
         topSpaceMd="110"
         bottomSpaceLg="80"
@@ -626,7 +626,7 @@ const Page = () => {
         className={'cs_gray_bg'}
       >
         <CoreValuesSection />
-      </Section>
+      </Section> */}
       {/* End Core Values Section */}
 
       {/* Start Why Choose Us Section */}

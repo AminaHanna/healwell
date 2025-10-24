@@ -68,23 +68,14 @@ const HeroSection = ({ data }) => {
                       />
                     </div>
                   </div>
+                  {/* <div className="cs_hero_shape">
+                    <Image src={firstBanner.iconImgUrl} className="cs_spinner_img" alt="img" width={142} height={190} />
+                  </div> */}
                 </div>
-              </div>
-
-              {/* AnimatedServiceNames at the bottom of the banner */}
-              <div 
-                style={{
-                  position: 'absolute',
-                  bottom: '20px',
-                  left: '0',
-                  right: '0',
-                  textAlign: 'center',
-                  zIndex: 10,
-                  height: 'auto',
-                  width: '100%'
-                }}
-              >
-                <AnimatedServiceNames />
+                <div className="cs_cta_info">
+                    {/* AnimatedServiceNames */}
+                    <AnimatedServiceNames />
+                  </div>
               </div>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import ContactSection from '@/app/Components/ContactSection';
+import ContactInfoCards from '@/app/Components/ContactInfoCards';
 import LocationMap from '@/app/Components/LocationMap/Index';
 import PageHeading from '@/app/Components/PageHeading';
 import PageSEOContent from '@/app/Components/PageSEOContent';
@@ -41,6 +42,16 @@ const page = () => {
 
       {/* SEO Content Section */}
       <PageSEOContent pageName="contact" />
+
+      {/* Contact Info Cards */}
+      <Section
+        topSpaceLg="70"
+        topSpaceMd="110"
+        bottomSpaceLg="80"
+        bottomSpaceMd="120"
+      >
+        <ContactInfoCards />
+      </Section>
 
       <Section
         topSpaceLg="70"
