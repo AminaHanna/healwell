@@ -18,8 +18,8 @@
 .cs_contact_info_card {
   display: flex;
   align-items: flex-start;
-  gap: 25px;
-  padding: 40px 30px;
+  gap: 18px;
+  padding: 25px 20px;
   background-color: var(--white);
   border: 1px solid var(--border-color);
   border-radius: 10px;
@@ -27,12 +27,12 @@
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
 
   @media (max-width: 991px) {
-    padding: 30px 25px;
+    padding: 20px 18px;
     gap: 20px;
   }
 
   @media (max-width: 575px) {
-    padding: 25px 20px;
+    padding: 18px 15px;
     gap: 15px;
     flex-direction: column;
     align-items: center;
@@ -97,11 +97,11 @@
 .cs_contact_info_content {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
   flex: 1;
 
   @media (max-width: 575px) {
-    gap: 6px;
+    gap: 3px;
   }
 }
 

@@ -44,14 +44,14 @@ const page = () => {
       <PageSEOContent pageName="contact" />
 
       {/* Contact Info Cards */}
-      <Section
+      {/* <Section
         topSpaceLg="70"
         topSpaceMd="110"
         bottomSpaceLg="80"
         bottomSpaceMd="120"
-      >
+      > */}
         <ContactInfoCards />
-      </Section>
+      {/* </Section> */}
 
       <Section
         topSpaceLg="70"

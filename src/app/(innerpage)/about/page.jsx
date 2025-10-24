@@ -46,27 +46,27 @@ const headingData = {
   const counterData = [
     {
       iconSrc: '/assets/img/icons/counter_icon_1.png',
-      countTo: 567,
+      countTo: 500,
       suffix: '+',
-      title: 'Active Clients',
+      title: 'Healthcare Facilities Served',
     },
     {
       iconSrc: '/assets/img/icons/counter_icon_2.png',
-      countTo: 23,
-      suffix: 'K+',
-      title: 'Team Support',
+      countTo: 2000,
+      suffix: '+',
+      title: 'Qualified Professionals',
     },
     {
       iconSrc: '/assets/img/icons/counter_icon_3.png',
-      countTo: 241,
-      suffix: '+',
-      title: 'Projects Completed',
+      countTo: 98,
+      suffix: '%',
+      title: 'Client Satisfaction Rate',
     },
     {
       iconSrc: '/assets/img/icons/counter_icon_4.png',
-      countTo: 16,
-      suffix: 'K+',
-      title: 'Award winner',
+      countTo: 24,
+      suffix: 'hrs',
+      title: 'Emergency Response Time',
     },
   ];
   
