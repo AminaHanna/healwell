@@ -31,7 +31,7 @@ const Service = ({ data, cardBg }) => {
                 <div className="cs_iconbox_shape" />
                 <div className="cs_iconbox_header d-flex align-items-center justify-content-between">
                   <div className="cs_iconbox_icon cs_center">
-                  <Image src={service.iconUrl} alt="img" width={26} height={25}   />
+                  <Image src={service.iconUrl} alt="img" width={26} height={25} style={{ width: 'auto', height: 'auto' }} />
                   </div>
                   <h3 className="iconbox_index">{service.index}</h3>
                 </div>

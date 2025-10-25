@@ -49,7 +49,6 @@ const PageHeading = ({ data, pageName }) => {
 
   return (
     <div className="container">
-      <h1 className="cs_page_title">{data?.title}</h1>
       <ol className="breadcrumb text-capitalize">
         <li className="breadcrumb-item">
           <Link href="/">Home</Link>
