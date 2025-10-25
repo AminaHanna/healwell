@@ -168,7 +168,7 @@ const Header = ({ isTopBar, variant }) => {
             <div className="cs_main_header_in">
               <div className="cs_main_header_left">
                 <Link className="cs_site_branding" href={menu.logoLink}>
-                <Image src={menu.logoUrl} alt="img" width={205} height={53}   />
+                <Image src={menu.logoUrl} alt="Healwell Healthcare Services Logo" width={220} height={60} priority />
                 </Link>
               </div>
               <div className="cs_main_header_right ">

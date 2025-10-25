@@ -83,7 +83,7 @@ const Footer = () => {
     backgroundImage: '/assets/img/footer_bg.jpg',
     logo: '/assets/img/logo.png',
     contactText:
-      'Open Hours of Government: <br /> Mon - Fri: 8.00 am. - 6.00 pm.',
+      'info@healwellhc.com',
     contactText2: '123 Healthcare Blvd, Medical City, MC 12345',
     contactText3: '(555) 123-4567',
     facebookHref: '/',
@@ -92,7 +92,7 @@ const Footer = () => {
     instagramHref: '/',
     widgets: [
       {
-        title: 'Service',
+        title: 'Services',
         links: [
           { href: '/service/prn-nursing-staff', text: 'PRN Nursing Staff' },
           { href: '/service/travel-nursing', text: 'Travel Nursing' },
@@ -126,7 +126,7 @@ const Footer = () => {
         title: 'The Medical Of This Working Health',
       },
     ],
-    copyrightText: 'Copyright © 2025 HealWell, All Rights Reserved.',
+    copyrightText: 'Copyright © 2025 ATEK IT INC DBA ATEK Technologies. All Rights Reserved.',
     footerMenu: [
       { href: '/about', text: 'About Us' },
       // { href: '/', text: 'Events' },

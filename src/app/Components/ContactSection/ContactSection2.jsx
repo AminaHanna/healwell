@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import loadBackgroudImages from "../Common/loadBackgroudImages";
 import Image from "next/image";
+import Link from "next/link";
 
 const ContactSection2 = () => {
 
@@ -17,31 +18,23 @@ const ContactSection2 = () => {
             <div className="col-lg-6">
             <div className="cs_section_heading cs_style_1">
               <p className="cs_section_subtitle cs_accent_color">
-                <span className="cs_shape_left"></span>APPLY HERE
+                <span className="cs_shape_left"></span>JOIN OUR TEAM
               </p>
-              <h2 className="cs_section_title">Apply For Job</h2>
+              <h2 className="cs_section_title">Career Opportunities</h2>
             </div>
             <div className="cs_height_25 cs_height_lg_25"></div>
-            <form className="cs_contact_form row cs_gap_y_30 home_form_area">
-              <div className="col-md-6">
-                <input type="text" name="name" className="cs_form_field" placeholder="Your name" />
-              </div>
-              <div className="col-md-6">
-                <input type="email" name="email" className="cs_form_field" placeholder="Your email" />
-              </div>
-              <div className="col-md-6">
-                <input type="text" name="subject" className="cs_form_field" placeholder="Your Subject" />
-              </div>
-              <div className="col-md-6">
-                <input type="text" name="phone" className="cs_form_field" placeholder="Your phone" />
+            <div className="cs_contact_form row cs_gap_y_30 home_form_area">
+              <div className="col-lg-12">
+                <p style={{ fontSize: '16px', lineHeight: '1.6', marginBottom: '20px' }}>
+                  Explore exciting career opportunities with Healwell Healthcare Services. We&apos;re looking for talented professionals to join our growing team.
+                </p>
               </div>
               <div className="col-lg-12">
-                <textarea rows="5" name="message" className="cs_form_field" placeholder="Your comments"></textarea>
+                <Link href="/careers" className="cs_btn cs_style_1 cs_color_1">
+                  View All Careers
+                </Link>
               </div>
-              <div className="col-lg-12">
-                <button type="submit" className="cs_btn cs_style_1 cs_color_1">Send Request</button>
-              </div>
-            </form>
+            </div>
             </div>
             <div className="col-lg-6">
               <div className="cs_solution_thumbnail cs_bg_filed" data-background="/assets/img/medical_solution_1.jpg" >

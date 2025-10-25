@@ -31,7 +31,7 @@ const TeamSection = ({ data, bgColor, variant, hr }) => {
 
       // Transform API data to match component format
       const transformedData = {
-        subtitle: 'OUR TEAM MEMBER',
+        subtitle: 'The Team',
         title: 'Our Leadership',
         sliderData: members.map(member => ({
           name: member.name,

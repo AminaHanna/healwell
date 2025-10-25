@@ -22,6 +22,11 @@ export const metadata = {
     template: '%s | Healwell Healthcare Services Website',
   },
   description: 'Healwell Healthcare Services Website',
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
   openGraph: {
     title: 'Healwell Healthcare Services Website',
     description: 'Healwell Healthcare Services Website',
@@ -34,7 +39,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta name="author" content="Themeservices" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <meta name="theme-color" content="#002261" />
       </head>
       <body className={`${rubik.variable} ${poppins.variable}`}>
         {children}

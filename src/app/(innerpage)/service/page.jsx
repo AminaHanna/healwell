@@ -11,10 +11,10 @@ const headingData = {
   };
   
   const serviceData = {
-    subtitle: 'OUR BEST SERVICE',
+    subtitle: 'SERVICES WE OFFER',
     title: 'High-Quality Services This Doctor',
     description:
-      'We are privileged to work with hundreds of future-thinking medial,<br> including many of the world’s top hardware, software, and<br> brands, feel safe and comfortable in establishing.',
+      'At Healwell Healthcare Services, we provide end-to-end staffing and workforce solutions tailored for hospitals, clinics, and care facilities. From temporary and permanent placements to specialized healthcare professionals.',
     services: [],
     footerIcon: '/assets/img/icons/service_footer_icon_1.png',
     footerText:

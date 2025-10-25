@@ -156,7 +156,7 @@ const heroData = {
   ];
   
   const serviceData = {
-    subtitle: 'OUR BEST SERVICE',
+    subtitle: 'SERVICES WE OFFER',
     title: 'High-Quality Services This Doctor',
     description:
       'At Healwell Healthcare Services, we provide end-to-end staffing and workforce solutions tailored for hospitals, clinics, and care facilities. From temporary and permanent placements to specialized healthcare professionals.',
@@ -345,7 +345,7 @@ const heroData = {
       'Choose when and where you work — and make a real difference in patient care. From per diem to PRN shifts, Healwell offers the freedom you deserve with the support you can trust.',
     buttonLink: '/contact',
     buttonText: 'Video More',
-    brandImage: '/assets/img/medical_brand.png',
+    brandImage: '/favicon.png',
   };
   
   const medicalTabsData = {
