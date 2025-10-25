@@ -25,7 +25,7 @@ const TestimonialSection = ({ data }) => {
         <div className="row cs_gap_y_50 align-items-center">
           <div className="col-lg-5" data-aos="fade-left">
             <div className="cs_testimonial_thumbnail">
-            <Image src={data.thumbnail} alt="img" width={484} height={463}   />
+            <Image src={data.thumbnail} alt="img" width={484} height={463} style={{ width: 'auto', height: 'auto' }} />
             </div>
           </div>
           <div className="col-lg-7">

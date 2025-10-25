@@ -11,10 +11,10 @@ const ContactSection = ({ data, reverseOrder }) => {
               <div className="col-lg-6">
                 <div className="cs_contact_thumbnail cs_pl-40">
                   <div className="cs_teeth_shape">
-                  <Image src={data.teethShapeImg} className="cs_spinner_img" alt="img" width={167} height={143}   />
+                  <Image src={data.teethShapeImg} className="cs_spinner_img" alt="img" width={167} height={143} style={{ width: 'auto', height: 'auto' }} />
                   </div>
                   <div className="cs_contact_img">
-                  <Image src={data.contactImg}  alt="img" width={319} height={497}   />
+                  <Image src={data.contactImg}  alt="img" width={319} height={497} style={{ width: 'auto', height: 'auto' }} />
                   </div>
                   <div className="cs_contact_bg_shape">
                     <div className="cs_white_bg_shape" />
@@ -172,10 +172,10 @@ const ContactSection = ({ data, reverseOrder }) => {
               <div className="col-lg-6">
                 <div className="cs_contact_thumbnail cs_pl-40">
                   <div className="cs_teeth_shape">
-                  <Image src={data.teethShapeImg} className="cs_spinner_img" alt="img" width={167} height={143}   />
+                  <Image src={data.teethShapeImg} className="cs_spinner_img" alt="img" width={167} height={143} style={{ width: 'auto', height: 'auto' }} />
                   </div>
                   <div className="cs_contact_img">
-                  <Image src={data.contactImg}  alt="img" width={319} height={497}   />
+                  <Image src={data.contactImg}  alt="img" width={319} height={497} style={{ width: 'auto', height: 'auto' }} />
                   </div>
                   <div className="cs_contact_bg_shape">
                     <div className="cs_white_bg_shape" />

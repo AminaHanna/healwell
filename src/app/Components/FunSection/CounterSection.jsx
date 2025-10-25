@@ -11,7 +11,7 @@ const CounterSection = ({ data }) => {
           {data.map((counter, index) => (
             <div className="cs_counter cs_style_1" key={index}>
               <div className="cs_counter_icon cs_center">
-              <Image src={counter.iconUrl} alt="img" width={37} height={37}   />
+              <Image src={counter.iconUrl} alt="img" width={37} height={37} style={{ width: 'auto', height: 'auto' }} />
               </div>
               <div className="cs_counter_nmber">{counter.number}</div>
               <p className="cs_counter_title mb-0">{counter.title}</p>

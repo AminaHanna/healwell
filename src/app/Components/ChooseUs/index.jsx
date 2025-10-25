@@ -20,7 +20,7 @@ const ChooseUs = ({ data }) => {
                 {services.map((service, index) => (
                   <div key={index} className="cs_iconbox cs_style_3">
                     <div className="cs_iconbox_icon cs_center cs_radius_5">
-                    <Image src={service.iconUrl} alt="img" width={25} height={25}   />
+                    <Image src={service.iconUrl} alt="img" width={25} height={25} style={{ width: 'auto', height: 'auto' }} />
                     </div>
                     <div className="cs_iconbox_text">
                       <h3 className="cs_iconbox_title">{service.title}</h3>
