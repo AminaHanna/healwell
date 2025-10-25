@@ -145,7 +145,7 @@ const Footer = () => {
           <div className="cs_footer_col">
             <div className="cs_footer_highlight_col cs_accent_bg">
               <div className="cs_footer_logo">
-              <Image src={data.logo} alt="img" width={205} height={53} style={{ width: 'auto', height: 'auto' }} />
+              <Image src={data.logo} alt="img" width={205} height={53} style={{ width: 'auto', height: '155px' }} />
               </div>
               <ul className="cs_footer_contact cs_mp_0">
                 <li>
