@@ -43,7 +43,7 @@ const HeroSection = ({ data }) => {
                         __html: firstBanner.contactSubtitle,
                       }}
                     />
-                    <div className="cs_hero_info">
+                    {/* <div className="cs_hero_info">
                       <h3
                         dangerouslySetInnerHTML={{
                           __html: firstBanner.contactTitle,
@@ -52,7 +52,7 @@ const HeroSection = ({ data }) => {
                       <p
                         dangerouslySetInnerHTML={{ __html: firstBanner.contact }}
                       />
-                    </div>
+                    </div> */}
                     <div className="cs_hero_btns">
                       <Button
                         btnText={firstBanner.btnText1}
