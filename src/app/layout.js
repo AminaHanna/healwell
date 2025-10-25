@@ -23,8 +23,11 @@ export const metadata = {
   },
   description: 'Healwell Healthcare Services Website',
   icons: {
-    icon: '/favicon.png',
-    shortcut: '/favicon.png',
+    icon: [
+      { rel: 'icon', url: '/favicon.png', type: 'image/png' },
+      { rel: 'icon', url: '/favicon.ico', type: 'image/x-icon' },
+    ],
+    shortcut: '/favicon.ico',
     apple: '/favicon.png',
   },
   openGraph: {
