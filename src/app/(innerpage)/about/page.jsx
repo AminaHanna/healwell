@@ -1,8 +1,6 @@
 import About from '@/app/Components/About';
-import CtaSection1 from '@/app/Components/CtaSection/CtaSection1';
 import CounterSection2 from '@/app/Components/FunSection/CounterSection2';
 import PageHeading from '@/app/Components/PageHeading';
-import PageSEOContent from '@/app/Components/PageSEOContent';
 import Section from '@/app/Components/Section';
 import TeamSection from '@/app/Components/TeamSection';
 import SectionHeading from '@/app/Components/SectionHeading';
@@ -92,11 +90,8 @@ const page = () => {
         className={'cs_page_heading cs_bg_filed cs_center'}
         backgroundImage="/assets/img/page_heading_bg.jpg"
       >
-        <PageHeading data={headingData} />
+        <PageHeading data={headingData} pageName="about" />
       </Section>
-
-      {/* SEO Content Section */}
-      <PageSEOContent pageName="about" />
 
       {/* Start About Section */}
 

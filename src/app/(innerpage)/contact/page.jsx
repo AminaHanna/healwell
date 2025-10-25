@@ -2,7 +2,6 @@ import ContactSection from '@/app/Components/ContactSection';
 import ContactInfoCards from '@/app/Components/ContactInfoCards';
 import LocationMap from '@/app/Components/LocationMap/Index';
 import PageHeading from '@/app/Components/PageHeading';
-import PageSEOContent from '@/app/Components/PageSEOContent';
 import Section from '@/app/Components/Section';
 import React from 'react';
 
@@ -37,11 +36,8 @@ const page = () => {
         className={'cs_page_heading cs_bg_filed cs_center'}
         backgroundImage="/assets/img/page_heading_bg.jpg"
       >
-        <PageHeading data={headingData} />
+        <PageHeading data={headingData} pageName="contact" />
       </Section>
-
-      {/* SEO Content Section */}
-      <PageSEOContent pageName="contact" />
 
       {/* Contact Info Cards */}
       {/* <Section

@@ -2,7 +2,6 @@
 
 import BlogsSection1 from '@/app/Components/BlogsSection/BlogsSection1';
 import PageHeading from '@/app/Components/PageHeading';
-import PageSEOContent from '@/app/Components/PageSEOContent';
 import Section from '@/app/Components/Section';
 import React, { useEffect, useState } from 'react';
 import { stripHtmlAndTruncateRegex } from '@/lib/htmlUtils';
@@ -63,11 +62,8 @@ const Page = () => {
         className={'cs_page_heading cs_bg_filed cs_center'}
         backgroundImage="/assets/img/page_heading_bg.jpg"
       >
-        <PageHeading data={headingData} />
+        <PageHeading data={headingData} pageName="blog" />
       </Section>
-
-      {/* SEO Content Section */}
-      <PageSEOContent pageName="blog" />
 
       {/* Start Blog Section */}
       <Section

@@ -2,14 +2,51 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-const PageHeading = ({ data }) => {
+const PageHeading = ({ data, pageName }) => {
   const [urlSegments, setUrlSegments] = useState([]);
+  const [seoContent, setSeoContent] = useState(null);
+  const [seoLoading, setSeoLoading] = useState(true);
+
   useEffect(() => {
     const pathSegments = window.location.pathname
       .split("/")
       .filter((segment) => segment !== "");
     setUrlSegments(pathSegments);
   }, []);
+
+  useEffect(() => {
+    const fetchSEOContent = async () => {
+      if (!pageName) {
+        setSeoLoading(false);
+        return;
+      }
+
+      try {
+        setSeoLoading(true);
+        const response = await fetch(`/api/page-settings?page_name=${pageName}`);
+        const data = await response.json();
+
+        if (data && Array.isArray(data)) {
+          const contentMap = {};
+          data.forEach((setting) => {
+            if (setting.setting_key === 'page_heading') {
+              contentMap.heading = setting.setting_value;
+            } else if (setting.setting_key === 'page_description') {
+              contentMap.description = setting.setting_value;
+            }
+          });
+          setSeoContent(contentMap);
+        }
+      } catch (error) {
+        console.error('Error fetching SEO content:', error);
+      } finally {
+        setSeoLoading(false);
+      }
+    };
+
+    fetchSEOContent();
+  }, [pageName]);
+
   return (
     <div className="container">
       <h1 className="cs_page_title">{data?.title}</h1>
@@ -29,6 +66,18 @@ const PageHeading = ({ data }) => {
           </li>
         ))}
       </ol>
+
+      {/* SEO Content - Now integrated into banner */}
+      {!seoLoading && seoContent && (seoContent.heading || seoContent.description) && (
+        <div className="cs_page_seo_content_banner">
+          {seoContent.heading && (
+            <h2 className="cs_seo_heading_banner">{seoContent.heading}</h2>
+          )}
+          {seoContent.description && (
+            <p className="cs_seo_description_banner">{seoContent.description}</p>
+          )}
+        </div>
+      )}
     </div>
   );
 };

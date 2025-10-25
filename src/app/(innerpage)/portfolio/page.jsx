@@ -1,7 +1,6 @@
 'use client';
 
 import PageHeading from '@/app/Components/PageHeading';
-import PageSEOContent from '@/app/Components/PageSEOContent';
 import Section from '@/app/Components/Section';
 import React, { useState, useEffect } from 'react';
 import HospitalCaseStudySection from '@/app/Components/HospitalCaseStudyCard/HospitalCaseStudySection';
@@ -91,7 +90,7 @@ export default function PortfolioPage() {
           className="cs_page_heading cs_bg_filed cs_center"
           backgroundImage="/assets/img/page_heading_bg.jpg"
         >
-          <PageHeading data={headingData} />
+          <PageHeading data={headingData} pageName="portfolio" />
         </Section>
         <Section
           topSpaceLg="70"
@@ -111,11 +110,8 @@ export default function PortfolioPage() {
         className="cs_page_heading cs_bg_filed cs_center"
         backgroundImage="/assets/img/page_heading_bg.jpg"
       >
-        <PageHeading data={headingData} />
+        <PageHeading data={headingData} pageName="portfolio" />
       </Section>
-
-      {/* SEO Content Section */}
-      <PageSEOContent pageName="portfolio" />
 
       <Section
         topSpaceLg="70"

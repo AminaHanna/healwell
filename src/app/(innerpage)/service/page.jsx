@@ -1,7 +1,6 @@
 'use client';
 
 import PageHeading from '@/app/Components/PageHeading';
-import PageSEOContent from '@/app/Components/PageSEOContent';
 import Section from '@/app/Components/Section';
 import Service from '@/app/Components/Service';
 import React, { useEffect, useState } from 'react';
@@ -67,11 +66,8 @@ const Page = () => {
         className={'cs_page_heading cs_bg_filed cs_center'}
         backgroundImage="/assets/img/page_heading_bg.jpg"
       >
-        <PageHeading data={headingData} />
+        <PageHeading data={headingData} pageName="service" />
       </Section>
-
-      {/* SEO Content Section */}
-      <PageSEOContent pageName="service" />
 
       <Section
           topSpaceLg="80"
